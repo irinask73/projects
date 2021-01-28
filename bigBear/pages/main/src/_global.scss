@@ -3,6 +3,7 @@ body {
     min-width: 32rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    color: $color-bg;
 }
 a,
 button {
@@ -12,7 +13,7 @@ button {
 a {
     display: inline-block;
 }
-h1 { 
+h1 {
     font-size: 4.8rem;
     line-height: 6.14rem;
     @include title;
@@ -32,16 +33,26 @@ h1 {
     background-color: $color-bg-button;
     box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
 }
-.wrapper {
+.container {
     position: relative;
     margin: 0 auto;
     padding: 0 2rem;
 }
-img{
+img {
     width: 100%;
     height: auto;
 }
-.text--orange{
+.subtitle {
+    @include subtitle;
+}
+.linetext::before {
+    content: "";
+    border-bottom: 0.1rem solid $color-yellow;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    margin-left: calc(-50% - 5rem);
+}
+.text--orange {
     color: $color-yellow;
 }
-

@@ -22,14 +22,4 @@
       margin-top: 2.3rem;
    }
 }
-.subtitle {
-  @include subtitle;
-}
-.linetext::before {
-   content: "";
-   border-bottom: 0.1rem solid $color-yellow;
-   width: 60%;
-   position: absolute;
-   top: 50%;
-   margin-left: calc(-50% - 5rem);
-}
+

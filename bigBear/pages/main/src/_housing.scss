@@ -1,0 +1,44 @@
+.housing {
+    &__title {
+        margin-top: 4.9rem;
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+        @include title;
+        color: $color-bg;
+    }
+    &__slider {
+        margin-top: 4.4rem;
+    }
+}
+.housing-slider {
+    &__item {
+        max-width: 22rem;
+        width: 100%;
+    }
+    &__title{
+        @include title;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        color: $color-bg;
+    }
+    &__content {
+        padding: 2rem;
+    }
+    &__info {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.58rem;
+    }
+    &__link {
+        display: flex;
+        margin-top: 3rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.7;
+        &::after {
+            content: url(/bigBear/assets/icons/arrow-right.svg);
+            margin-left: 0.5rem;
+        }
+    }
+}
