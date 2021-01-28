@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   font-size: 10px;
 }
@@ -108,6 +109,10 @@ img {
   height: auto;
 }
 
+.text--orange {
+  color: #fe982a;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -143,12 +148,10 @@ img {
 
 .start__subtitle {
   margin-top: 1.1rem;
-  text-align: right;
 }
 
 .start__subtitle-item {
   font-size: 1.4rem;
-  font-weight: 400;
   line-height: 1.7rem;
 }
 
@@ -159,15 +162,49 @@ img {
 .subtitle {
   position: relative;
   overflow: hidden;
+  text-align: right;
+  font-weight: 400;
+  text-transform: uppercase;
   color: #fe982a;
 }
 
 .linetext::before {
   content: "";
   border-bottom: 0.1rem solid #fe982a;
-  width: 50%;
+  width: 60%;
   position: absolute;
   top: 50%;
-  margin-left: calc(-50% - 0.5rem);
+  margin-left: calc(-50% - 5rem);
+}
+
+.bigBear {
+  background: #171B18;
+}
+
+.bigBear__title {
+  margin-top: 2rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bigBear__subtitle {
+  font-size: 1.6rem;
+  line-height: 1.95rem;
+}
+
+.bigBear__info {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 1.95rem;
+  color: #ffffff;
+}
+
+.bigBear__info p + p {
+  margin-bottom: 2rem;
+}
+
+.bigBear__info li::before {
+  content: "•";
 }
 /*# sourceMappingURL=main.css.map */

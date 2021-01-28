@@ -1,0 +1,23 @@
+.bigBear{
+    background: $color-bg;
+    &__title{
+        margin-top: 2rem;
+        @include title;
+    }
+    &__subtitle{
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+    }
+    &__info{
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+        color: $color-white;
+        & p + p{
+            margin-bottom: 2rem;
+        }
+        li::before{
+            content: "•";
+        }
+    }
+}

@@ -1,9 +1,19 @@
 $color-bg-button: #fe982a;
 $color-white: #ffffff;
 $color-yellow: #fe982a;
+$color-bg: #171B18;
 
 @mixin title {
     font-family: "Lora", serif;    
     font-weight: 400;
     color: $color-white;
+}
+
+@mixin subtitle {
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-yellow;
 }
