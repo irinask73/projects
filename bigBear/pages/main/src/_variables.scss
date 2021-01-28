@@ -1,0 +1,9 @@
+$color-bg-button: #fe982a;
+$color-white: #ffffff;
+$color-yellow: #fe982a;
+
+@mixin title {
+    font-family: "Lora", serif;    
+    font-weight: 400;
+    color: $color-white;
+}

@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="left">
-                <nav class="menu">
+            <nav class="menu">
+                <div class="menu__left">
                     <div class="menu__btn">
                         <div></div>
                     </div>
@@ -27,25 +28,25 @@
                         <li class="menu__item"><a href="#">Chalet</a></li>
                         <li class="menu__item"><a href="#">Контакти</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="right">
-                <a href="tel:
-                +38 (096) 740 4337" class="contact">
-                    +38 (096) 740 4337</a>
-            </div>
+                </div>
+                <div class="menu__right">
+                    <a href="tel:
+                +38 (096) 740 4337" class="phone">
+                        +38 (096) 740 4337</a>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="home">
-            <h1 class="title">Велика Ведмедиця</h1>
-            <div class="subtitle">
-                <ul class="sutitle__content">
-                    <li>Мережа готелів та котеджів в</li>
-                    <li>Буковелі та Яремче</li>
-                </ul>
+        <section class="start">
+            <div class="wrapper">
+                <h2 class="start__title">Велика Ведмедиця</h2>
+                <div class="start__subtitle">
+                    <h3 class="start__subtitle-item subtitle linetext">Мережа готелів та котеджів в</h3>
+                    <h3 class="start__subtitle-item subtitle">Буковелі та Яремче</h3>
+                </div>
+                <a href="#" class="button start__button">Бронювання номерів</a>
             </div>
-            <a href="#" class="button button--booking">Бронювання номерів</a>
         </section>
     </main>
     <footer class="footer"></footer>
