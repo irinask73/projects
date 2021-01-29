@@ -149,6 +149,10 @@ img {
   color: #fe982a;
 }
 
+.text--uppercase {
+  text-transform: uppercase;
+}
+
 /*location block start*/
 .location {
   display: -webkit-box;
@@ -211,6 +215,14 @@ img {
 
 .location .info__block li::before {
   content: "•";
+}
+
+.location .link__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*location block end*/
@@ -330,5 +342,9 @@ img {
 .housing-slider__link::after {
   content: url(/bigBear/assets/icons/arrow-right.svg);
   margin-left: 0.5rem;
+}
+
+.honey--text {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

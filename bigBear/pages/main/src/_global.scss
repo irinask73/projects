@@ -67,6 +67,9 @@ img {
 .text--orange {
     color: $color-yellow;
 }
+.text--uppercase {
+    text-transform: uppercase;
+}
 /*location block start*/
 .location {
     display: flex;
@@ -95,7 +98,6 @@ img {
         width: 100%;
         &--left {
             margin-top: 20%;
-            
         }
         &--left li + li,
         &--right li + li {
@@ -110,6 +112,10 @@ img {
         li::before {
             content: "•";
         }
+    }
+    .link__block {
+        display: flex;
+        justify-content: space-around;
     }
 }
 /*location block end*/
