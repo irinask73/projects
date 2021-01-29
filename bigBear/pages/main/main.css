@@ -149,6 +149,10 @@ img {
   color: #fe982a;
 }
 
+.text--white {
+  color: #ffffff;
+}
+
 .text--uppercase {
   text-transform: uppercase;
 }
@@ -215,6 +219,7 @@ img {
 
 .location .info__block li::before {
   content: "•";
+  padding-right: 0.5rem;
 }
 
 .location .link__block {
@@ -346,5 +351,15 @@ img {
 
 .honey--text {
   margin-bottom: 2rem;
+}
+
+.cottagesAndChalets {
+  padding-bottom: 3.5rem;
+  background: #171B18;
+  color: #ffffff;
+}
+
+.cottagesAndChalets .location {
+  margin-top: 0;
 }
 /*# sourceMappingURL=main.css.map */

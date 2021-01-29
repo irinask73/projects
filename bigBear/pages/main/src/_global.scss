@@ -67,6 +67,9 @@ img {
 .text--orange {
     color: $color-yellow;
 }
+.text--white {
+    color: $color-white;
+}
 .text--uppercase {
     text-transform: uppercase;
 }
@@ -111,6 +114,7 @@ img {
         }
         li::before {
             content: "•";
+            padding-right: 0.5rem;
         }
     }
     .link__block {
