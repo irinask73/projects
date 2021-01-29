@@ -106,8 +106,8 @@ img {
     }
     .info__block {
         margin-bottom: 2.5rem;
-        p + p {
-            margin-bottom: 1.5rem;
+        & ul {
+            margin-top: 1.5rem;
         }
         li::before {
             content: "•";

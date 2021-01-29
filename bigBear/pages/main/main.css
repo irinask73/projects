@@ -209,8 +209,8 @@ img {
   margin-bottom: 2.5rem;
 }
 
-.location .info__block p + p {
-  margin-bottom: 1.5rem;
+.location .info__block ul {
+  margin-top: 1.5rem;
 }
 
 .location .info__block li::before {
