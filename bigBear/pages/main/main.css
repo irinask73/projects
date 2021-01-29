@@ -110,11 +110,23 @@ img {
   height: auto;
 }
 
+.title {
+  margin-top: 2rem;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #ffffff;
+  color: #171B18;
+}
+
 .subtitle {
   position: relative;
   overflow: hidden;
   text-align: right;
   font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.95rem;
   text-transform: uppercase;
   color: #fe982a;
 }
@@ -122,16 +134,86 @@ img {
 .linetext::before {
   content: "";
   border-bottom: 0.1rem solid #fe982a;
-  width: 60%;
+  width: 100%;
   position: absolute;
   top: 50%;
-  margin-left: calc(-50% - 5rem);
+  margin-left: calc(-100% - 1rem);
+}
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.95rem;
 }
 
 .text--orange {
   color: #fe982a;
 }
 
+/*location block start*/
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+.location__title {
+  margin-bottom: 3rem;
+}
+
+.location__link {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  line-height: 2.19rem;
+  color: #fe982a;
+}
+
+.location__link::after {
+  content: url(/bigBear/assets/icons/arrow-right-orange.svg);
+  margin-left: 0.5rem;
+}
+
+.location .foto__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3.4rem;
+  max-width: 54rem;
+  width: 100%;
+}
+
+.location .foto__block--left {
+  margin-top: 20%;
+}
+
+.location .foto__block--left li + li,
+.location .foto__block--right li + li {
+  margin-top: 1.5rem;
+}
+
+.location .info__block {
+  margin-bottom: 2.5rem;
+}
+
+.location .info__block p + p {
+  margin-bottom: 1.5rem;
+}
+
+.location .info__block li::before {
+  content: "•";
+}
+
+/*location block end*/
 .header {
   position: absolute;
   width: 100%;
@@ -189,15 +271,8 @@ img {
   color: #ffffff;
 }
 
-.bigBear__subtitle {
-  font-size: 1.6rem;
-  line-height: 1.95rem;
-}
-
 .bigBear__info {
   margin-top: 3rem;
-  font-size: 1.6rem;
-  line-height: 1.95rem;
   color: #ffffff;
 }
 
@@ -209,18 +284,12 @@ img {
   content: "•";
 }
 
-.housing__title {
-  margin-top: 4.9rem;
-  font-size: 3.6rem;
-  line-height: 4.6rem;
-  font-family: "Lora", serif;
-  font-weight: 400;
-  color: #ffffff;
-  color: #171B18;
-}
-
 .housing__slider {
   margin-top: 4.4rem;
+}
+
+.housing__title {
+  margin-top: 4.9rem;
 }
 
 .housing-slider__item {
