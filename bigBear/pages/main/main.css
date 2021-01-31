@@ -19,6 +19,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -301,52 +302,12 @@ img {
   content: "•";
 }
 
-.housing__slider {
-  margin-top: 4.4rem;
-}
-
-.housing__title {
+.housing {
   margin-top: 4.9rem;
 }
 
-.housing-slider__item {
-  max-width: 22rem;
-  width: 100%;
-}
-
-.housing-slider__title {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.9rem;
-  color: #171B18;
-}
-
-.housing-slider__content {
-  padding: 2rem;
-}
-
-.housing-slider__info {
-  margin-top: 1rem;
-  font-size: 1.3rem;
-  line-height: 1.58rem;
-}
-
-.housing-slider__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.7;
-}
-
-.housing-slider__link::after {
-  content: url(/bigBear/assets/icons/arrow-right.svg);
-  margin-left: 0.5rem;
+.housing__title {
+  margin-bottom: 4.4rem;
 }
 
 .honey--text {
@@ -363,57 +324,130 @@ img {
   margin-top: 0;
 }
 
-.reviews .slider__inner {
-  margin-bottom: 1.5rem;
+.reviews {
+  margin-top: 2rem;
 }
 
-.reviews .slider__subtitle {
+.slider .reviews__slider--item {
+  max-width: 33rem;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.slider .reviews__slider--content {
+  max-width: 25rem;
+  width: 100%;
+}
+
+.advantages {
+  margin-top: 2rem;
+}
+
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item {
+  min-width: 22rem;
+  margin-right: 2rem;
+  -webkit-box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
+          box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
+}
+
+.slider__content {
+  max-width: 18rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider__image {
+  margin-bottom: 2rem;
+  min-height: 14.1rem;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: 30% 35%;
+  background-size: cover;
+}
+
+.slider__title {
+  margin-bottom: 2rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.05rem;
+  color: #171B18;
+}
+
+.slider__subtitle {
   margin-top: 2.5rem;
   margin-bottom: 1.3rem;
   text-align: center;
 }
 
-.reviews .slider__content {
+.slider__info {
+  height: 6rem;
+  overflow-y: hidden;
+  font-size: 1.3rem;
+  line-height: 1.58rem;
+}
+
+.slider__info li::before {
+  content: "•";
+  padding-right: 0.5rem;
+}
+
+.slider__info li:last-child {
+  display: none;
+}
+
+.slider__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 3rem;
-  margin-bottom: 3.5rem;
-  -webkit-box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.07);
-          box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.07);
+  margin: 2rem 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 
-.reviews .slider__text {
-  padding: 3rem 5rem;
-  width: 100%;
+.slider__link::after {
+  content: url(/bigBear/assets/icons/arrow-right.svg);
+  margin-left: 0.5rem;
+}
+
+.slider__text {
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.reviews .slider__control {
+.slider__scrollbar {
+  margin-top: 2rem;
+}
+
+.slider__control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 3.5rem;
 }
 
-.reviews .slider__control .button--right,
-.reviews .slider__control .button--left {
+.slider__control .button--right,
+.slider__control .button--left {
   background: transparent;
 }
 
-.reviews .slider__control .button--right::after {
+.slider__control .button--right::after {
   content: url(/bigBear/assets/icons/slider-arrow-right.svg);
 }
 
-.reviews .slider__control .button--left::after {
+.slider__control .button--left::after {
   content: url(/bigBear/assets/icons/slider-arrow-left.svg);
 }
 /*# sourceMappingURL=main.css.map */
