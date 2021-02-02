@@ -452,7 +452,7 @@ img {
 
 .info {
   padding-top: 5rem;
-  padding-bottom: 7.5rem;
+  padding-bottom: 9rem;
   background-color: #171B18;
   color: #ffffff;
 }
@@ -587,5 +587,46 @@ img {
 .contacts__info-wrapper {
   max-height: 15rem;
   overflow: scroll;
+}
+
+.footer {
+  background-color: #1C201D;
+}
+
+.footer__menu {
+  padding: 5rem 0;
+}
+
+.footer__menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__menu-title {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.93rem;
+}
+
+.footer__menu-item {
+  margin-bottom: 5rem;
+}
+
+.footer__menu-item li {
+  margin-bottom: 2.5rem;
+}
+
+.footer__menu-phone {
+  margin-bottom: 2.5rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
