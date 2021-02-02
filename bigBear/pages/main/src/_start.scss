@@ -1,11 +1,12 @@
 .start {
-   background-image: url(/bigBear/assets/images/bgImage.png);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
    height: 68rem;
+   &__wrapper{
+       padding-top: 38.2rem;
+   }
    &__title {
-      padding-top: 38.2rem;
       text-align: center;
       @include title;
       font-size: 3.6rem;

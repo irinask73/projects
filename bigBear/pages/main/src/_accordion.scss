@@ -1,0 +1,28 @@
+.accordion{
+    &__title{
+        margin-bottom: 3rem;
+    }
+    &-item__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.4rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        background-color: $color-light-grey;
+        &::after{
+            content: url(/bigBear/assets/icons/chevron-down.svg);
+            margin-left: 1.8rem;
+        }
+    }
+&-item__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.8rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.46rem;
+    background-color: $color-dark-grey;
+}
+}
