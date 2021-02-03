@@ -230,17 +230,101 @@ img {
 /*location block end*/
 .header {
   position: absolute;
+  z-index: 99;
   width: 100%;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .header__menu {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__menu-left {
+  display: none;
+}
+
+.header__menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.header__menu-btn div {
+  width: 1.8rem;
+  height: 0.2rem;
+  background-color: #f2f2f2;
+}
+
+.header__menu-right {
+  font-weight: 600;
+}
+
+.header__menu-title {
+  margin-bottom: 3rem;
+}
+
+.header__menu-list {
+  color: #f2f2f2;
+}
+
+.header__menu-list li {
+  margin-bottom: 2rem;
+}
+
+/*active menu style*/
+.header__active {
+  background: top/cover url(/bigBear/assets/images/active-bg.jpg);
+}
+
+.btn--active div:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.btn--active div:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+}
+
+.btn--active div:nth-child(3) {
+  display: none;
+}
+
+.header__menu--active {
+  display: block;
+  height: 100vh;
+}
+
+.header__menu-left--active {
+  display: block;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.header__menu-right--active {
+  display: none;
 }
 
 .start {

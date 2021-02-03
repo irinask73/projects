@@ -13,29 +13,34 @@
 
 <body>
     <h1>Bukovel</h1>
-    <header class="header">
+    <header class="header" data-header>
         <div class="container">
-            <nav class="header__menu">
-                <div class="header__menu-left">
-                    <div class="menu__btn">
-                        <div></div>
-                    </div>
-                    <h3 class="menu__title">Меню</h3>
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="#">Головна</a></li>
-                        <li class="menu__item"><a href="#">Буковель</a></li>
-                        <li class="menu__item"><a href="#">Яремче</a></li>
-                        <li class="menu__item"><a href="#">Котеджі</a></li>
-                        <li class="menu__item"><a href="#">Chalet</a></li>
-                        <li class="menu__item"><a href="#">Контакти</a></li>
-                    </ul>
+            <div class="header__menu" data-headerMenu>
+                <div class="header__menu-btn" data-mobileMenuBtn>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <div class="menu__right">
+                <div class="header__menu-left" data-menuLeft>
+                    <nav>
+                        <h3 class="title text--white header__menu-title">Меню</h3>
+                        <ul class="text header__menu-list">
+                            <li class="menu__item"><a href="#">Головна</a></li>
+                            <li class="menu__item"><a href="#">Буковель</a></li>
+                            <li class="menu__item"><a href="#">Яремче</a></li>
+                            <li class="menu__item"><a href="#">Котеджі</a></li>
+                            <li class="menu__item"><a href="#">Chalet</a></li>
+                            <li class="menu__item"><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text text--white header__menu-right" data-menuRight>
                     <a href="tel:
                 +38 (096) 740 4337" class="phone">
                         +38 (096) 740 4337</a>
                 </div>
-            </nav>
+            </div>
+
         </div>
     </header>
     <main>
@@ -692,7 +697,8 @@
                             <li><a href="#">Контакти</a></li>
                         </ul>
                     </div>
-                    <div class="footer__menu-phone contacts__info-phone"><a href="tel:+380967404337">+38 (096) 740 4337</a></div>
+                    <div class="footer__menu-phone contacts__info-phone"><a href="tel:+380967404337">+38 (096) 740
+                            4337</a></div>
                     <div class="footer__menu-item">
                         <ul class="contacts__info-link">
                             <li><a href="#" class="link--facebook"></a></li>
@@ -708,6 +714,7 @@
         </div>
 
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
