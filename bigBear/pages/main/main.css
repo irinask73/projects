@@ -51,6 +51,24 @@ p {
   margin: 0;
 }
 
+/*header*/
+@-webkit-keyframes animatedMenuLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animatedMenuLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   position: relative;
   min-width: 32rem;
@@ -233,6 +251,8 @@ img {
   z-index: 99;
   width: 100%;
   padding-top: 3rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .header__menu {
@@ -266,14 +286,14 @@ img {
   width: 2.4rem;
   height: 2.4rem;
   cursor: pointer;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
 }
 
 .header__menu-btn div {
   width: 1.8rem;
   height: 0.2rem;
   background-color: #f2f2f2;
+  -webkit-transition-duration: 0.5s, 0.5s;
+          transition-duration: 0.5s, 0.5s;
 }
 
 .header__menu-right {
@@ -293,37 +313,41 @@ img {
 }
 
 /*active menu style*/
-.header__active {
+.header.active {
   background: top/cover url(/bigBear/assets/images/active-bg.jpg);
 }
 
-.btn--active div:nth-child(1) {
+.header__menu-btn.active div:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.btn--active div:nth-child(2) {
+.header__menu-btn.active div:nth-child(2) {
+  position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  position: absolute;
 }
 
-.btn--active div:nth-child(3) {
+.header__menu-btn.active div:nth-child(3) {
   display: none;
 }
 
-.header__menu--active {
+.header__menu.active {
   display: block;
   height: 100vh;
 }
 
-.header__menu-left--active {
+.header__menu-left.active {
   display: block;
   text-align: center;
   margin-top: 30%;
+  -webkit-animation-name: animatedMenuLeft;
+          animation-name: animatedMenuLeft;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
-.header__menu-right--active {
+.header__menu-right.active {
   display: none;
 }
 
