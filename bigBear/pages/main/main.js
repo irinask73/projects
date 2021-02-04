@@ -14,3 +14,16 @@ mobileMenuBtn.addEventListener('click', function () {
 });
 //header menu end
 
+//initial swiper
+const swiper = new Swiper('.bigBear__slider', {
+    loop: true,
+    //navigation
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      //margin betwen slider
+      spaceBetween: 10,
+      grabCursor: true,
+});
+

@@ -71,6 +71,10 @@ img {
 .text--uppercase {
     text-transform: uppercase;
 }
+.flex--column{
+    display: flex;
+    flex-direction: column;
+}
 /*location block start*/
 .location {
     display: flex;
