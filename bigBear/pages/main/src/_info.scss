@@ -1,9 +1,24 @@
-.info{
-    padding-top: 5rem;
-    padding-bottom: 9rem;
+.info {
+    padding: 5rem 0 9rem;
+    margin-top: 5rem;
     background-color: $color-bg;
     color: $color-white;
-    .questions{
+    .questions {
         padding-bottom: 8rem;
     }
+    .slider__front {
+        padding-bottom: 4rem;
+        &-item {
+            height: 23.3rem;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+.swiper-pagination-bullet {
+    background: $color-light-beige;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: $color-activ-pagination;
 }

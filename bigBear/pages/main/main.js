@@ -44,5 +44,12 @@ const reviewsSwiper = new Swiper('.reviews__slider',{
         nextEl: '.button--left',
         prevEl: '.button--right',
     },
-})
+});
 
+const fotoSwiper = new Swiper('.gallery-top',{
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+      },
+})

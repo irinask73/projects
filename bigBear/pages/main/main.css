@@ -590,14 +590,33 @@ img {
 }
 
 .info {
-  padding-top: 5rem;
-  padding-bottom: 9rem;
+  padding: 5rem 0 9rem;
+  margin-top: 5rem;
   background-color: #171B18;
   color: #ffffff;
 }
 
 .info .questions {
   padding-bottom: 8rem;
+}
+
+.info .slider__front {
+  padding-bottom: 4rem;
+}
+
+.info .slider__front-item {
+  height: 23.3rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-pagination-bullet {
+  background: #EFEFEF;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF8C22;
 }
 
 .foto-slider {
