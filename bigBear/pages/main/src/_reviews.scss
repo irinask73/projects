@@ -8,8 +8,14 @@
         margin: 0 auto;
         padding-bottom: 3rem;
     }
-    .reviews__slider--content {
-        max-width: 25rem;
-        width: 100%;
-    }
+}
+.slider__content.reviews__slider--content {
+    max-width: 80%;
+    padding-bottom: 3rem;
+}
+.reviews__slider-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
 }

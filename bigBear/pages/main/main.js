@@ -15,15 +15,34 @@ mobileMenuBtn.addEventListener('click', function () {
 //header menu end
 
 //initial swiper
-const swiper = new Swiper('.bigBear__slider', {
+const bigBearSwiper = new Swiper('.bigBear__slider', {
     loop: true,
     //navigation
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-      //margin betwen slider
-      spaceBetween: 10,
-      grabCursor: true,
+    },
+    //margin betwen slider
+    spaceBetween: 10,
+    grabCursor: true,
 });
+
+const swiper = new Swiper('.slider', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    scrollbar: {
+        dragSize: 110,
+        hide: false,
+    },
+});
+
+const reviewsSwiper = new Swiper('.reviews__slider',{
+    loop: true,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.button--left',
+        prevEl: '.button--right',
+    },
+})
 

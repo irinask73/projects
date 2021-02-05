@@ -477,24 +477,25 @@ img {
   padding-bottom: 3rem;
 }
 
-.slider .reviews__slider--content {
-  max-width: 25rem;
-  width: 100%;
+.slider__content.reviews__slider--content {
+  max-width: 80%;
+  padding-bottom: 3rem;
+}
+
+.reviews__slider-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
 }
 
 .advantages {
   margin-top: 2rem;
 }
 
-.slider__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .slider__item {
   min-width: 22rem;
-  margin-right: 2rem;
+  height: auto;
   -webkit-box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
           box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
 }
@@ -563,17 +564,15 @@ img {
   text-align: center;
 }
 
-.slider__scrollbar {
-  margin-top: 2rem;
-}
-
 .slider__control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 3.5rem;
+  width: 60%;
+  padding-top: 3.5rem;
 }
 
 .slider__control .button--right,
@@ -767,5 +766,22 @@ img {
 .footer__menu-phone {
   margin-bottom: 2.5rem;
   font-weight: 600;
+}
+
+/*slider*/
+.slider.swiper-container {
+  min-width: 40rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-container .swiper-scrollbar {
+  height: 0.3rem;
+  width: 20%;
+}
+
+@media (min-width: 500px) {
+  .slider__control {
+    max-width: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
