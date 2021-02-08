@@ -68,7 +68,25 @@ const sliderFront = new Swiper('.slider__front', {
             direction: 'vertical',
             thumbs: {
                 swiper: galleryThumbs,
-              },
+            },
         },
     },
 });
+//Questions accordion
+const accordionItems = document.querySelector('.accordion__items');
+const accordionButtons = accordionItems.querySelectorAll('li > div');
+
+for (let i = 0; i < accordionButtons.length; i++) {
+    accordionButtons[i].addEventListener('click', function () {
+        const isTabActive = accordionButtons[i].classList.contains('active');
+        for (let j = 0; j < accordionButtons.length; j++) {
+            if (isTabActive === false) {
+                accordionButtons[j].classList.remove('active')
+            }
+        }
+        accordionButtons[i].classList.toggle('active');
+        // if the same element has a class 'active' then on click remove the class 'active'
+    });
+};
+
+

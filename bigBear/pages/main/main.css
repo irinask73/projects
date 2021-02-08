@@ -670,7 +670,11 @@ img {
   margin-left: 1.8rem;
 }
 
-.accordion-item__text {
+.accordion-item__title.active::after {
+  content: url(/bigBear/assets/icons/x.svg);
+}
+
+.accordion-item__title.active + div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,9 +686,20 @@ img {
           align-items: center;
   height: 8.8rem;
   padding: 2rem;
-  font-size: 1.2rem;
   line-height: 1.46rem;
   background-color: #262B27;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.accordion-item__text {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  font-size: 1.3rem;
 }
 
 .contacts {
@@ -826,6 +841,9 @@ img {
 }
 
 @media (min-width: 600px) {
+  .info {
+    /*questions accordion*/
+  }
   .info .foto__slider {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -854,6 +872,20 @@ img {
     max-width: 16rem;
     width: 100%;
     height: 16rem;
+  }
+  .info .accordion-item__title::after {
+    content: url(/bigBear/assets/icons/chevron-down-bg.svg);
+  }
+  .info .accordion-item__title.active::after {
+    content: url(/bigBear/assets/icons/x-orange.svg);
+  }
+  .info .accordion-item__text {
+    font-size: 1.8rem;
+    line-height: 2.194rem;
+  }
+  .text {
+    font-size: 1.8rem;
+    line-height: 2.194rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
-.accordion{
-    &__title{
+.accordion {
+    &__title {
         margin-bottom: 3rem;
     }
-    &-item__title{
+    &-item__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -10,19 +10,32 @@
         padding: 2rem;
         margin-bottom: 1rem;
         background-color: $color-light-grey;
-        &::after{
+        &::after {
             content: url(/bigBear/assets/icons/chevron-down.svg);
             margin-left: 1.8rem;
         }
+        &.active {
+            &::after {
+                content: url(/bigBear/assets/icons/x.svg);
+            }
+            & + div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 8.8rem;
+                padding: 2rem;
+                line-height: 1.46rem;
+                background-color: $color-dark-grey;
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 1s linear;
+            }
+        }
     }
-&-item__text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8.8rem;
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.46rem;
-    background-color: $color-dark-grey;
-}
+    &-item__text {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 0.5s, opacity 0.5s linear;
+        font-size: 1.3rem;
+    }
 }
