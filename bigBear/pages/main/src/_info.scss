@@ -9,7 +9,15 @@
     .slider__front {
         padding-bottom: 4rem;
         &-item {
-            height: 23.3rem;
+            min-height: 23.3rem;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .slider__thumbs {
+        &-item {
+            height: 16rem;
             background-size: cover;
             background-position: center;
         }
@@ -22,3 +30,9 @@
 .swiper-pagination-bullet-active {
     background: $color-activ-pagination;
 }
+
+.foto__slider {
+    max-width: 111rem;
+    position: relative;
+}
+

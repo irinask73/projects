@@ -14,7 +14,6 @@ mobileMenuBtn.addEventListener('click', function () {
 });
 //header menu end
 
-//initial swiper
 const bigBearSwiper = new Swiper('.bigBear__slider', {
     loop: true,
     //navigation
@@ -37,7 +36,7 @@ const swiper = new Swiper('.slider', {
     },
 });
 
-const reviewsSwiper = new Swiper('.reviews__slider',{
+const reviewsSwiper = new Swiper('.reviews__slider', {
     loop: true,
     slidesPerView: 1,
     navigation: {
@@ -45,11 +44,31 @@ const reviewsSwiper = new Swiper('.reviews__slider',{
         prevEl: '.button--right',
     },
 });
-
-const fotoSwiper = new Swiper('.gallery-top',{
+//info slider
+const galleryThumbs = new Swiper('.slider__thumbs', {
+    direction: 'vertical',
     loop: true,
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loopedSlides: 4,
+    freeMode: true,
+    centeredSlides: true,
+    slideToClickedSlide: true,
+});
+
+const sliderFront = new Swiper('.slider__front', {
+    loop: true,
+    loopedSlides: 4,
     slidesPerView: 1,
     pagination: {
         el: '.swiper-pagination',
-      },
-})
+    },
+    breakpoints: {
+        600: {
+            direction: 'vertical',
+            thumbs: {
+                swiper: galleryThumbs,
+              },
+        },
+    },
+});
