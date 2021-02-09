@@ -54,6 +54,29 @@
             }
         }
     }
+    .footer {
+        &__menu {
+            &-wrapper {
+                flex-direction: row;
+                justify-content: space-around;
+                &.text {
+                    font-size: 1.6rem;
+                }
+            }
+            &-item{
+                margin-bottom: 0;
+                .contacts__info-link{
+                    flex-direction: column;
+                    & li + li {
+                        margin-left: 0;
+                    }
+                }
+            }
+            &-phone{
+                order: 1;
+            }
+        }
+    }
     .text {
         font-size: 1.8rem;
         line-height: 2.194rem;

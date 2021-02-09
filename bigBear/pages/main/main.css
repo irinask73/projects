@@ -883,6 +883,34 @@ img {
     font-size: 1.8rem;
     line-height: 2.194rem;
   }
+  .footer__menu-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__menu-wrapper.text {
+    font-size: 1.6rem;
+  }
+  .footer__menu-item {
+    margin-bottom: 0;
+  }
+  .footer__menu-item .contacts__info-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__menu-item .contacts__info-link li + li {
+    margin-left: 0;
+  }
+  .footer__menu-phone {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .text {
     font-size: 1.8rem;
     line-height: 2.194rem;

@@ -88,5 +88,3 @@ for (let i = 0; i < accordionButtons.length; i++) {
         // if the same element has a class 'active' then on click remove the class 'active'
     });
 };
-
-
