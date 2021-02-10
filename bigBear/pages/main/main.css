@@ -938,12 +938,38 @@ img {
   .info {
     /*questions accordion*/
   }
+  .info .foto__slider {
+    margin-top: 5rem;
+  }
   .info .slider__front {
     height: 61.3rem;
     padding-bottom: 0;
   }
   .info .slider__front-pagination {
     display: none;
+  }
+  .info .accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info .accordion__content {
+    width: 100%;
+  }
+  .info .accordion-item__title.active + div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .info .accordion-item__title::after {
     content: url(/bigBear/assets/icons/chevron-down-bg.svg);

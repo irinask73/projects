@@ -11,6 +11,9 @@
 @media (min-width: 600px) {
     .info {
         //slider start
+        .foto__slider{
+            margin-top: 5rem;
+        }
         .slider {
             &__front {
                 height: 61.3rem;
@@ -22,6 +25,16 @@
         }
         /*questions accordion*/
         .accordion {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__content{
+                width: 100%;
+            }
+            &-item__title.active + div{
+                justify-content: start;
+            }
             &-item__title {
                 &::after {
                     content: url(/bigBear/assets/icons/chevron-down-bg.svg);

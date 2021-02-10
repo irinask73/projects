@@ -58,7 +58,7 @@ const sliderThumbs = new Swiper('.slider__thumbs.swiper-container', {
 	navigation: { // задаем кнопки навигации
 		nextEl: '.slider__next', 
 		prevEl: '.slider__prev' 
-	},
+    },
 	freeMode: true, // при перетаскивании превью ведет себя как при скролле
 });
 
@@ -69,6 +69,9 @@ const sliderFront = new Swiper('.slider__front.swiper-container', {
     loop: true,
     loopAdditionalSlides: 0,
     speed: 700,
+    autoplay: {
+        delay: 4000,
+      },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
