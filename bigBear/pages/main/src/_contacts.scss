@@ -5,12 +5,15 @@
         margin-bottom: 2.5rem;
     }
     &__info {
-        margin-top: -11rem;
-        padding: 2.5rem 2rem 3rem;
-        background: linear-gradient(180deg, $color-light-grey 0%, rgba(60, 60, 60, 0) 100%);
-        background-color: #171b18;
-        & li + li {
-            margin-bottom: 2.5rem;
+        &-inner {
+            position: relative;
+            margin-top: -11rem;
+            padding: 2.5rem 2rem 3rem;
+            background-color: #171b18;
+            background: linear-gradient(180deg, $color-light-grey 0%, rgba(60, 60, 60, 0) 100%);
+            & li + li {
+                margin-bottom: 2.5rem;
+            }
         }
         &-subtitle {
             text-align: left;
@@ -50,10 +53,10 @@
                 font-size: 1.2rem;
                 line-height: 1.46rem;
             }
-        }
-        &-wrapper {
-            max-height: 15rem;
-            overflow: scroll;
+            &--inner {
+                max-height: 15rem;
+                overflow-y: scroll;
+            }
         }
     }
 }

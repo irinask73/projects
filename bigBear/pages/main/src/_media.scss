@@ -4,36 +4,20 @@
     }
 }
 @media (max-width: 599px) {
-    .slider__thumbs {
+    .slider__col {
         display: none;
     }
 }
 @media (min-width: 600px) {
     .info {
-        .foto__slider {
-            display: flex;
-            height: 61.3rem;
-        }
-        .slider__front {
-            width: 80%;
-            padding-bottom: 0;
-            margin-right: 3%;
-            &-pagination {
-                display: none;
-            }
-            &-item {
-                max-width: 92rem;
-                width: 100%;
-            }
-        }
-        .slider__thumbs {
-            display: block;
-            width: 20%;
-            flex-shrink: 0;
-            &-item {
-                max-width: 16rem;
-                width: 100%;
-                height: 16rem;
+        //slider start
+        .slider {
+            &__front {
+                height: 61.3rem;
+                padding-bottom: 0;
+                &-pagination {
+                    display: none;
+                }
             }
         }
         /*questions accordion*/
@@ -53,6 +37,39 @@
                 line-height: 2.194rem;
             }
         }
+        //contacts start
+        .contacts {
+            &__background {
+                background-image: url(/bigBear/assets/images/info-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &__title {
+                font-size: 4.8rem;
+                line-height: 6.1rem;
+                margin-bottom: 6rem;
+            }
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                max-width: 105rem;
+                margin: 0 auto;
+            }
+            &__image {
+                order: 1;
+                max-width: 46rem;
+                width: 100%;
+                align-self: center;
+            }
+            &__info {
+                &-inner {
+                    margin-top: 0;
+                    max-width: 44.5rem;
+                    background: none;
+                    backdrop-filter: blur(3px);
+                }
+            }
+        }
     }
     .footer {
         &__menu {
@@ -63,16 +80,16 @@
                     font-size: 1.6rem;
                 }
             }
-            &-item{
+            &-item {
                 margin-bottom: 0;
-                .contacts__info-link{
+                .contacts__info-link {
                     flex-direction: column;
                     & li + li {
                         margin-left: 0;
                     }
                 }
             }
-            &-phone{
+            &-phone {
                 order: 1;
             }
         }

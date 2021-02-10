@@ -631,41 +631,73 @@
         </section>
         <section class="info">
             <div class="container">
-                <div class="foto__slider">
-                    <div class="slider__front swiper-container gallery-top">
-                        <div class="swiper-wrapper">
-                            <div class="slider__front-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-1.jpg)">
+                <section class="foto__slider">
+                    <div class="slider__flex">
+                        <div class="slider__front swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="/bigBear/assets/images/foto-slider-1.jpg"
+                                            alt="mountains in Bukovel Ukraine">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="/bigBear/assets/images/foto-slider-2.jpg"
+                                            alt="view from the hotel balcony to the forest">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="/bigBear/assets/images/foto-slider-3.jpg"
+                                            alt="hotel in Bukovel Ukraine">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="/bigBear/assets/images/foto-slider-4.jpg"
+                                            alt="evening view of the hotel">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slider__front-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-2.jpg)">
-                            </div>
-                            <div class="slider__front-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-3.jpg)">
-                            </div>
-                            <div class="slider__front-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-4.jpg)">
-                            </div>
+                            <div class="slider__front-pagination swiper-pagination"></div>
                         </div>
-                        <div class="slider__front-pagination swiper-pagination"></div>
-                    </div>
-                    <div class="slider__thumbs swiper-container gallery-thumbs">
-                        <div class="swiper-wrapper">
-                            <div class="slider__thumbs-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-1.jpg)">
+
+                        <div class="slider__col">
+                            <div class="slider__prev"></div> <!-- Кнопка для переключения на предыдущий слайд -->
+                            <div class="slider__thumbs swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="/bigBear/assets/images/foto-slider-1.jpg"
+                                                alt="mountains in Bukovel Ukraine">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="/bigBear/assets/images/foto-slider-2.jpg"
+                                                alt="view from the hotel balcony to the forest">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="/bigBear/assets/images/foto-slider-3.jpg"
+                                                alt="hotel in Bukovel Ukraine">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="/bigBear/assets/images/foto-slider-4.jpg"
+                                                alt="evening view of the hotel">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slider__thumbs-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-2.jpg)">
-                            </div>
-                            <div class="slider__thumbs-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-3.jpg)">
-                            </div>
-                            <div class="slider__thumbs-item swiper-slide"
-                                style="background-image:url(/bigBear/assets/images/foto-slider-4.jpg)">
-                            </div>                           
+                            <div class="slider__next"></div> <!-- Кнопка для переключения на следующий слайд -->
                         </div>
+
                     </div>
-                </div>
+                </section>
                 <div class="questions">
                     <div class="accordion">
                         <h2 class="title text--white accordion__title">Часті запитання</h2>
@@ -706,51 +738,62 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="contacts">
-                <h3 class="title text--white contacts__title">
-                    Наші контакти
-                </h3>
-                <img class="contacts__image" src="/bigBear/assets/images/contacts-bg.jpg"
-                    alt="google map Ukraine Ivano Frankovsk">
-                <div class="container contacts__wrapper">
-                    <ul class="contacts__info">
-                        <li>
-                            <ul class="subtitle text--white contacts__info-subtitle">
-                                ВІДДІЛ БРОНЮВАННЯ:
-                                <li><a class="contacts__info-phone" href="tel:+38(096)7404337">+38 (096) 740 4337</a>
+                <div class="contacts__background">
+                    <h3 class="title text--white contacts__title">
+                        Наші контакти
+                    </h3>
+                    <div class="contacts__wrapper container">
+                        <div class="contacts__image">
+                            <img class="contacts__image" src="/bigBear/assets/images/contacts-bg.jpg"
+                                alt="google map Ukraine Ivano Frankovsk">
+                        </div>
+                        <div class="contacts__info">
+                            <ul class="contacts__info-inner">
+                                <li>
+                                    <ul class="subtitle text--white contacts__info-subtitle">
+                                        ВІДДІЛ БРОНЮВАННЯ:
+                                        <li><a class="contacts__info-phone" href="tel:+38(096)7404337">+38 (096) 740
+                                                4337</a>
+                                        </li>
+                                        <li><a class="contacts__info-email"
+                                                href="mailto:hotel@vedmedycya.com.ua">+hotel@vedmedycya.com.ua</a></li>
+                                    </ul>
                                 </li>
-                                <li><a class="contacts__info-email"
-                                        href="mailto:hotel@vedmedycya.com.ua">+hotel@vedmedycya.com.ua</a></li>
+                                <li>
+                                    <p class="text contacts__info-text"><span>Ведмежий Двір - </span> вулиця Карпатська,
+                                        1/1,
+                                        Поляниця, Івано-Франківська
+                                        область, t8593</p>
+                                </li>
+                                <li>
+                                    <p class="text contacts__info-text"><span>Велика Ведмедиця - </span>вул.
+                                        Вітовського, 5,
+                                        Яремче, Івано-Франківська область,
+                                        78500</p>
+                                </li>
+                                <li>
+                                    <p class="text contacts__info-text"><span>Авторські шале - </span>Участок Вишні 421,
+                                        Буковель, 78593, Україна, Поляниця,
+                                        Івано-Франківська область, 78593
+                                    </p>
+                                </li>
+                                <li>
+                                    <ul class="contacts__info-link">
+                                        <li><a href="#" class="link--facebook"></a></li>
+                                        <li><a href="#" class="link--instagram"></a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li>
-                            <p class="text contacts__info-text"><span>Ведмежий Двір - </span> вулиця Карпатська, 1/1,
-                                Поляниця, Івано-Франківська
-                                область, t8593</p>
-                        </li>
-                        <li>
-                            <p class="text contacts__info-text"><span>Велика Ведмедиця - </span>вул. Вітовського, 5,
-                                Яремче, Івано-Франківська область,
-                                78500</p>
-                        </li>
-                        <li>
-                            <p class="text contacts__info-text"><span>Авторські шале - </span>Участок Вишні 421,
-                                Буковель, 78593, Україна, Поляниця,
-                                Івано-Франківська область, 78593
-                            </p>
-                        </li>
-                        <li>
-                            <ul class="contacts__info-link">
-                                <li><a href="#" class="link--facebook"></a></li>
-                                <li><a href="#" class="link--instagram"></a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- block with scrolling-->
+                <div class="container">
                     <div class="contacts__info-scrolling">
-                        <div class="contacts__info-wrapper">
+                        <div class="contacts__info-scrolling--inner">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non pretium turpis porttitor
                                 augue
                                 sed sed elementum. Nisi risus pretium rutrum non condimentum vulputate purus. Mauris
@@ -758,7 +801,8 @@
                                 egestas
                                 quam elementum ligula viverra semper. Tincidunt porttitor quam quisque dolor eget
                                 consequat
-                                pellentesque. Nec in netus amet varius. At nulla gravida nisl elementum. Malesuada odio
+                                pellentesque. Nec in netus amet varius. At nulla gravida nisl elementum. Malesuada
+                                odio
                                 hendrerit in ut consequat, nulla nulla. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing
                                 elit. Non pretium turpis porttitor augue
@@ -767,21 +811,23 @@
                                 egestas
                                 quam elementum ligula viverra semper. Tincidunt porttitor quam quisque dolor eget
                                 consequat
-                                pellentesque. Nec in netus amet varius. At nulla gravida nisl elementum. Malesuada odio
+                                pellentesque. Nec in netus amet varius. At nulla gravida nisl elementum. Malesuada
+                                odio
                                 hendrerit in ut consequat, nulla nulla.
                             </p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <nav class="footer__menu text--white">
-                <div class="footer__menu-wrapper text"> 
+                <div class="footer__menu-wrapper text">
                     <div class="footer__menu-item">
-                      <h3 class="footer__menu-title">Меню</h3>  
+                        <h3 class="footer__menu-title">Меню</h3>
                         <ul>
                             <li><a href="#">Буковель</a></li>
                             <li><a href="#">Яремче</a></li>
@@ -808,7 +854,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/bigBear/js/main.js"></script>
 </body>
 
 </html>

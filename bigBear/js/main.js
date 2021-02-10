@@ -44,34 +44,45 @@ const reviewsSwiper = new Swiper('.reviews__slider', {
         prevEl: '.button--right',
     },
 });
-//info slider
-const galleryThumbs = new Swiper('.slider__thumbs', {
-    direction: 'vertical',
+//SECTION INFO
+//slider
+// Инициализация превью слайдера
+const sliderThumbs = new Swiper('.slider__thumbs.swiper-container', { 
+    direction: 'vertical', 
     loop: true,
-    spaceBetween: 30,
-    slidesPerView: 3,
-    loopedSlides: 4,
-    freeMode: true,
+    loopAdditionalSlides: 0,
+    speed: 500,
     centeredSlides: true,
-    slideToClickedSlide: true,
+	slidesPerView: 3, 
+	spaceBetween: 25, 
+	navigation: { // задаем кнопки навигации
+		nextEl: '.slider__next', 
+		prevEl: '.slider__prev' 
+	},
+	freeMode: true, // при перетаскивании превью ведет себя как при скролле
 });
 
-const sliderFront = new Swiper('.slider__front', {
+const sliderFront = new Swiper('.slider__front.swiper-container', {
+    slidesPerView: 1, 
+    spaceBetween: 20, 
+    mousewheel: true, // можно прокручивать изображения колёсиком мыши
     loop: true,
-    loopedSlides: 4,
-    slidesPerView: 1,
+    loopAdditionalSlides: 0,
+    speed: 700,
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
-    breakpoints: {
-        600: {
-            direction: 'vertical',
-            thumbs: {
-                swiper: galleryThumbs,
-            },
-        },
+    navigation: { // задаем кнопки навигации
+		nextEl: '.slider__next', 
+		prevEl: '.slider__prev' 
     },
+    thumbs: { // указываем на превью слайдер
+		swiper: sliderThumbs // указываем имя превью слайдера
+	},
 });
+
+
 //Questions accordion
 const accordionItems = document.querySelector('.accordion__items');
 const accordionButtons = accordionItems.querySelectorAll('li > div');
