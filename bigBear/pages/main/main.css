@@ -497,7 +497,7 @@ img {
 }
 
 .slider__item {
-  min-width: 22rem;
+  max-width: 22rem;
   height: auto;
   -webkit-box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
           box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
@@ -589,6 +589,10 @@ img {
 
 .slider__control .button--left::after {
   content: url(/bigBear/assets/icons/slider-arrow-left.svg);
+}
+
+.slider-scrollbar {
+  width: 100%;
 }
 
 .info {
@@ -913,13 +917,12 @@ img {
 
 /*slider*/
 .slider.swiper-container {
-  min-width: 40rem;
+  min-width: 32rem;
   padding-bottom: 2rem;
 }
 
-.swiper-container .swiper-scrollbar {
+.slider.swiper-container .swiper-scrollbar {
   height: 0.3rem;
-  width: 20%;
 }
 
 @media (min-width: 500px) {

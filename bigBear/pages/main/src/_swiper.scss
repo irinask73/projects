@@ -1,9 +1,8 @@
 /*slider*/
 .slider.swiper-container {
-    min-width: 40rem;
+    min-width: 32rem;
     padding-bottom: 2rem;
-}
-.swiper-container .swiper-scrollbar {
-    height: 0.3rem;
-    width: 20%;
+    & .swiper-scrollbar {
+        height: 0.3rem;
+    }
 }

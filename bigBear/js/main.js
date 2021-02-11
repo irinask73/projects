@@ -27,13 +27,29 @@ const bigBearSwiper = new Swiper('.bigBear__slider', {
 });
 
 const swiper = new Swiper('.slider', {
-    slidesPerView: 3,
-    spaceBetween: 20,
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
     loop: true,
-    scrollbar: {
-        dragSize: 110,
-        hide: false,
+    loopAdditionalSlides: 3,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
     },
+    autoplay: {
+        delay: 5000,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+      },
 });
 
 const reviewsSwiper = new Swiper('.reviews__slider', {

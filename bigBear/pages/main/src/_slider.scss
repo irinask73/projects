@@ -1,6 +1,6 @@
 .slider {
     &__item {
-        min-width: 22rem;
+        max-width: 22rem;
         height: auto;
         box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
     }
@@ -71,5 +71,8 @@
         .button--left::after {
             content: url(/bigBear/assets/icons/slider-arrow-left.svg);
         }
+    }
+    &-scrollbar{
+        width: 100%;
     }
 }
