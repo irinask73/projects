@@ -456,17 +456,17 @@ img {
   margin-bottom: 4.4rem;
 }
 
-.honey--text {
+.housing .honey--text {
   margin-bottom: 2rem;
 }
 
-.cottagesAndChalets {
+.housing .cottagesAndChalets {
   padding: 3.5rem 0;
   background: #171B18;
   color: #ffffff;
 }
 
-.cottagesAndChalets .location {
+.housing .cottagesAndChalets .location {
   margin-top: 0;
 }
 

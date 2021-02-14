@@ -3,4 +3,17 @@
     &__title {
         margin-bottom: 4.4rem;
     }
+    .honey {
+        &--text{
+            margin-bottom: 2rem;
+        }
+    }
+    .cottagesAndChalets{
+        padding: 3.5rem 0;
+        background: $color-bg;
+        color: $color-white;
+        .location{
+            margin-top: 0;
+        }
+    }
 }
