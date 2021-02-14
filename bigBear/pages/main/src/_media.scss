@@ -153,3 +153,29 @@
         line-height: 6.1rem;
     }
 }
+@media (min-width: 900px) {
+    //HOUSING
+    .location {
+        flex-direction: row;
+        margin: 5rem auto;
+        &__title {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        .foto__block {
+            flex-shrink: 0;
+            margin-bottom: 0;
+        }
+    }
+    .bukovel .foto__block,
+    .yaremche .foto__block,
+    .cottages .foto__block {
+        margin-right: 2rem;
+        justify-content: start;
+    }
+    .honey .foto__block,
+    .chale .foto__block{
+        order: 1;
+        margin-left: 2rem;
+    }
+}
