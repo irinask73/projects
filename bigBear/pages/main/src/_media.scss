@@ -9,9 +9,46 @@
     }
 }
 @media (min-width: 600px) {
+    //HOUSING
+    //slider
+    .slider {
+        &__item {
+            position: relative;
+            max-width: 42.5rem;
+            width: 100%;
+            height: 48.5rem;
+        }
+        &__image {
+            max-height: 100%;
+            background-blend-mode: normal;
+        }
+        &__content {
+            position: absolute;
+            top: 65%;
+            left: 10%;
+            color: $color-white;
+        }
+        &__title {
+            color: $color-white;
+            font-size: 2.4rem;
+            line-height: 3.07rem;
+        }
+        &__info {
+            font-size: 1.8rem;
+            line-height: 2.19rem;
+        }
+        &__link {
+            display: none;
+        }
+    }
+    //REVIEWS
+    .reviews__slider-text {
+        color: $color-nero;
+    }
+    //INFO
     .info {
         //slider start
-        .foto__slider{
+        .foto__slider {
             margin-top: 5rem;
         }
         .slider {
@@ -29,10 +66,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            &__content{
+            &__content {
                 width: 100%;
             }
-            &-item__title.active + div{
+            &-item__title.active + div {
                 justify-content: start;
             }
             &-item__title {
@@ -58,8 +95,6 @@
                 background-size: cover;
             }
             &__title {
-                font-size: 4.8rem;
-                line-height: 6.1rem;
                 margin-bottom: 6rem;
             }
             &__wrapper {
@@ -84,6 +119,8 @@
             }
         }
     }
+    /*SECTION HOUSING*/
+
     .footer {
         &__menu {
             &-wrapper {
@@ -110,5 +147,9 @@
     .text {
         font-size: 1.8rem;
         line-height: 2.194rem;
+    }
+    .title {
+        font-size: 4.8rem;
+        line-height: 6.1rem;
     }
 }

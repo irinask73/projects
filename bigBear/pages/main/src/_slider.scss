@@ -1,24 +1,24 @@
 .slider {
     &__item {
         max-width: 22rem;
-        height: auto;
+        width: 100%;
+        height: 32.7rem;
         box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
     }
     &__content {
-        max-width: 18rem;
-        width: 100%;
+        padding: 2rem;
         margin: 0 auto;
     }
     &__image {
-        margin-bottom: 2rem;
-        min-height: 14.1rem;
-        background-repeat: no-repeat;
-        display: block;
+        background-repeat: no-repeat;     
         background-position: 30% 35%;
         background-size: cover;
+        max-height: 14.1rem;
+        height: 100%;
+        background-blend-mode: lighten;
     }
     &__title {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         @include title;
         font-weight: 700;
         font-size: 1.5rem;
@@ -42,7 +42,7 @@
     }
     &__link {
         display: flex;
-        margin: 2rem 0;
+        margin-top: 2rem;
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 1.7rem;

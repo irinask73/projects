@@ -2,11 +2,20 @@
     margin-top: 2rem;
 }
 .slider {
-    .reviews__slider--item {
-        max-width: 33rem;
-        width: 100%;
-        margin: 0 auto;
-        padding-bottom: 3rem;
+    .reviews__slider {
+        &--item {
+            max-width: 33rem;
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 3rem;
+        }
+        &--content{
+            padding: 2rem;
+            margin: 0 auto;
+        }
+        &--text{
+            color: $color-nero;
+        }
     }
 }
 .slider__content.reviews__slider--content {

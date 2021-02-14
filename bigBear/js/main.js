@@ -40,9 +40,9 @@ const swiper = new Swiper('.slider', {
       modifier: 1,
       slideShadows: true,
     },
-    autoplay: {
-        delay: 5000,
-      },
+    //autoplay: {
+     //   delay: 5000,
+     // },
       keyboard: {
         enabled: true,
       },
