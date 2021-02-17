@@ -20,7 +20,7 @@ form {
         height: 4.5rem;
         background-color: $color-bg;
         &::after {
-            content: url(/bigBear/assets/icons/search.svg);
+            content: url(../../assets/icons/search.svg);
         }
     }
 }

@@ -102,7 +102,7 @@ img {
         line-height: 2.19rem;
         color: $color-yellow;
         &::after {
-            content: url(/bigBear/assets/icons/arrow-right-orange.svg);
+            content: url(../../assets/icons/arrow-right-orange.svg);
             margin-left: 0.5rem;
         }
     }
