@@ -84,11 +84,11 @@
         cursor: pointer;
     }
     &__prev::after {
-        content: url(/bigBear/assets/icons/slide-prev.svg);
+        content: url(../../assets/icons/slide-prev.svg);
         margin-bottom: 1rem;
     }
     &__next::after {
-        content: url(/bigBear/assets/icons/slide-next.svg);
+        content: url(../../assets/icons/slide-next.svg);
         margin-top: 1rem;
     }
     &__prev:focus,
@@ -143,10 +143,10 @@
                 margin-left: 2rem;
             }
             .link--facebook {
-                content: url(/bigBear/assets/icons/icon-facebook.svg);
+                content: url(../../assets/icons/icon-facebook.svg);
             }
             .link--instagram {
-                content: url(/bigBear/assets/icons/icon-instagram.svg);
+                content: url(../../assets/icons/icon-instagram.svg);
             }
         }
         &-scrolling {

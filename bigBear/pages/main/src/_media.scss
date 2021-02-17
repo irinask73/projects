@@ -100,11 +100,11 @@
             }
             &-item__title {
                 &::after {
-                    content: url(/bigBear/assets/icons/chevron-down-bg.svg);
+                    content: url(../..assets/icons/chevron-down-bg.svg);
                 }
                 &.active {
                     &::after {
-                        content: url(/bigBear/assets/icons/x-orange.svg);
+                        content: url(../../assets/icons/x-orange.svg);
                     }
                 }
             }
@@ -116,7 +116,7 @@
         //contacts start
         .contacts {
             &__background {
-                background-image: url(/bigBear/assets/images/info-bg.jpg);
+                background-image: url(../../assets/images/info-bg.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
             }

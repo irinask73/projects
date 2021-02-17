@@ -47,7 +47,7 @@
         font-size: 1.4rem;
         line-height: 1.7rem;
         &::after {
-            content: url(/bigBear/assets/icons/arrow-right.svg);
+            content: url(../../assets/icons/arrow-right.svg);
             margin-left: 0.5rem;
         }
     }
@@ -66,10 +66,10 @@
             background: transparent;
         }
         .button--right::after {
-            content: url(/bigBear/assets/icons/slider-arrow-right.svg);
+            content: url(../../assets/icons/slider-arrow-right.svg);
         }
         .button--left::after {
-            content: url(/bigBear/assets/icons/slider-arrow-left.svg);
+            content: url(../../assets/icons/slider-arrow-left.svg);
         }
     }
     &-scrollbar{
