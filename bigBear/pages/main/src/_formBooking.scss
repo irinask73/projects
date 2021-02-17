@@ -1,0 +1,59 @@
+form {
+    height: 100%;
+}
+.form {
+    &__booking {
+        width: 100%;
+        height: 8rem;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    &__inner {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.75rem;
+        font-size: 1.4rem;
+    }
+    &__button {
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: $color-bg;
+        &::after {
+            content: url(/bigBear/assets/icons/search.svg);
+        }
+    }
+}
+.booking__location-inner,
+.date__arrival,
+.date__departure,
+.guests {
+    display: flex;
+    flex-direction: column;
+    & input {
+        background-color: transparent;
+    }
+}
+
+.input__location {
+    background-color: transparent;
+}
+.guest {
+    &__choice {
+        text-align: center;
+        font-weight: 600;
+        & button {
+            font-size: 1.8rem;
+            background-color: transparent;
+        }
+        &-step {
+            all: unset;
+            -moz-appearance: textfield;
+            width: 3em;
+            text-align: center;
+            &::-webkit-inner-spin-button {
+                display: none;
+            }
+        }
+    }
+}
