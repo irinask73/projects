@@ -185,9 +185,23 @@
     }
 }
 @media (min-width: 700px) {
-    .start__button {
-        display: none;
+    .start {
+        &__button {
+            display: none;
+        }
+        .date__arrival,
+        .date__departure {
+            padding-right: 0.5rem;
+            border-right: 1px solid $color-bg;
+            & input{
+                width: 10rem;
+            }
+        }
+        .guests{
+            width: 10rem;
+        }
     }
+
     .bigBear {
         &__slider {
             max-height: 35rem;
@@ -267,6 +281,19 @@
     //HEADER
     .header__menu-list li + li {
         margin-left: 4.5rem;
+    }
+    //START
+    .start{
+        .date__arrival,
+        .date__departure {
+            padding-right: 3.5rem;
+            & input{
+                width: auto;
+            }
+        }
+        .guests{
+            width: auto;
+        }
     }
     //BIGBEAR
     .bigBear {

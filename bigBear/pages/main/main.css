@@ -380,11 +380,14 @@ img {
 
 form {
   height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .form__booking {
   width: 100%;
   height: 8rem;
+  margin-top: 3rem;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -1238,6 +1241,18 @@ form {
   .start__button {
     display: none;
   }
+  .start .date__arrival,
+  .start .date__departure {
+    padding-right: 0.5rem;
+    border-right: 1px solid #171B18;
+  }
+  .start .date__arrival input,
+  .start .date__departure input {
+    width: 10rem;
+  }
+  .start .guests {
+    width: 10rem;
+  }
   .bigBear__slider {
     max-height: 35rem;
   }
@@ -1315,6 +1330,17 @@ form {
 @media (min-width: 900px) {
   .header__menu-list li + li {
     margin-left: 4.5rem;
+  }
+  .start .date__arrival,
+  .start .date__departure {
+    padding-right: 3.5rem;
+  }
+  .start .date__arrival input,
+  .start .date__departure input {
+    width: auto;
+  }
+  .start .guests {
+    width: auto;
   }
   .bigBear__block {
     position: relative;
