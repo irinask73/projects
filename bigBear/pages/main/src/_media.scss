@@ -100,7 +100,7 @@
             }
             &-item__title {
                 &::after {
-                    content: url(../..assets/icons/chevron-down-bg.svg);
+                    content: url(../../assets/icons/chevron-down-bg.svg);
                 }
                 &.active {
                     &::after {

@@ -1145,7 +1145,7 @@ form {
             justify-content: start;
   }
   .info .accordion-item__title::after {
-    content: url(../..assets/icons/chevron-down-bg.svg);
+    content: url(../../assets/icons/chevron-down-bg.svg);
   }
   .info .accordion-item__title.active::after {
     content: url(../../assets/icons/x-orange.svg);
