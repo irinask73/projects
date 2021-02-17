@@ -16,7 +16,7 @@
     <h1>Bukovel</h1>
     <header class="header" data-header>
         <div class="container">
-            <div class="header__menu" data-headerMenu>
+            <div class="header__menu text--header" data-headerMenu>
                 <div class="header__menu-btn" data-mobileMenuBtn>
                     <div></div>
                     <div></div>
@@ -25,7 +25,7 @@
                 <div class="header__menu-left" data-menuLeft>
                     <nav>
                         <h3 class="title text--white header__menu-title">Меню</h3>
-                        <ul class="text header__menu-list">
+                        <ul class="text--header header__menu-list">
                             <li class="menu__item"><a href="#">Головна</a></li>
                             <li class="menu__item"><a href="#">Буковель</a></li>
                             <li class="menu__item"><a href="#">Яремче</a></li>
@@ -35,7 +35,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="text text--white header__menu-right" data-menuRight>
+                <div class="text--white text--header header__menu-right" data-menuRight>
                     <a href="tel:
                 +38 (096) 740 4337" class="phone">
                         +38 (096) 740 4337</a>
@@ -45,67 +45,108 @@
         </div>
     </header>
     <main>
-        <section class="start" style="background-image: url(/bigBear/assets/images/start-bg.jpg);">
+        <section class="start">
             <div class="container">
                 <div class="start__wrapper">
-                    <h3 class="title text--white">Велика Ведмедиця</h3>
+                    <h3 class="title text--white start__title">Велика Ведмедиця</h3>
                     <div class="start__subtitle">
-                        <h4 class="start__subtitle-item subtitle linetext">Мережа готелів та котеджів в</h4>
+                        <h4 class="start__subtitle-item subtitle linetext">Мережа готелів та котеджів в
+                        </h4>
                         <h4 class="start__subtitle-item subtitle">Буковелі та Яремче</h4>
+                    </div>
+                    <div class="form__booking">
+                        <form action="#" method="post">
+                            <div class="form__inner">
+                                <div class="booking__location" data-bookingLocation>
+                                    <div class="booking__location-inner">
+                                        <label for="location" class="text--header text--uppercase text--bold">Бронювання
+                                            номерів</label>
+                                        <input list="drop-location" id="location" type="text" name="location"
+                                            class="text--header" placeholder="Гарантоване заселення" required>
+                                    </div>
+                                    <datalist id="drop-location">
+                                        <option value="Chocolate">
+                                        <option value="Coconut">
+                                        <option value="Mint">
+                                        <option value="Strawberry">
+                                        <option value="Vanilla">
+                                    </datalist>
+                                </div>
+                                <div class="date__arrival">
+                                    <label for="arrival" class="text--form text--bold">Дата заїзду</label>
+                                    <input type="date" id="arrival" name="trip-start">
+                                </div>
+                                <div class="date__departure">
+                                    <label for="departure" class="text--form text--bold">Дата виїзду</label>
+                                    <input type="date" id="departurel" name="trip-end">
+                                </div>
+                                <div class="guests">
+                                    <p class="text--header text--uppercase text--bold">Кількість гостей?</p>
+                                    <div class="guest__choice">
+                                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <input type="number" min="0" max="10" value="0" readonly
+                                            class="text guest__choice-step" required>
+                                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    </div>
+                                </div>
+
+                                <button class="form__button"></button>
+                            </div>
+                        </form>
                     </div>
                     <a href="#" class="button start__button">Бронювання номерів</a>
                 </div>
             </div>
         </section>
         <section class="bigBear">
-            <div class="container flex--column">
-                <div class="bigBear__block-info">
-                    <div class="subtitle__block">
-                        <h4 class="subtitle linetext">АТМОСФЕРНИЙ</h4>
-                        <h4 class="subtitle">ВІДПОЧИНОК В ГОРАХ</h4>
-                        <h2 class="title bigBear__title text--white">Велика ведмедиця</h2>
-                        <div class="bigBear__info text">
-                            <p>
-                                Отримайте комплексний відпочинок, а не ключі від номеру.
-                            </p>
-                            <p class="text--orange">
-                                У нас європейський сервіс та домашня атмосфера затишку і гостинності.
-                            </p>
-                            <ul>
-                                <li>
-                                    Готельно-ресторанний комплекс "Ведмежий Двір" у Буковелі
-                                </li>
-                                <li>
-                                    Family готель в Яремче
-                                </li>
-                                <li>
-                                    Елітні котеджі від Яремча до Буковеля
-                                </li>
-                            </ul>
+            <div class="container">
+                <div class="bigBear__block flex--column">
+                    <div class="bigBear__block-info">
+                        <div class="subtitle__block">
+                            <h4 class="subtitle linetext">АТМОСФЕРНИЙ</h4>
+                            <h4 class="subtitle">ВІДПОЧИНОК В ГОРАХ</h4>
+                            <h2 class="title bigBear__title text--white">Велика ведмедиця</h2>
+                            <div class="bigBear__info text">
+                                <p>
+                                    Отримайте комплексний відпочинок, а не ключі від номеру.
+                                </p>
+                                <p class="text--orange">
+                                    У нас європейський сервіс та домашня атмосфера затишку і гостинності.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Готельно-ресторанний комплекс "Ведмежий Двір" у Буковелі
+                                    </li>
+                                    <li>
+                                        Family готель в Яремче
+                                    </li>
+                                    <li>
+                                        Елітні котеджі від Яремча до Буковеля
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigBear__block-slider">
+                        <div class="bigBear__slider swiper-container">
+                            <div class="bigBear__slider-wrapper swiper-wrapper">
+                                <div class="bigBear__slider-item swiper-slide">
+                                    <img src="/bigBear/assets/images/bigBear-slider-1.jpg" alt="foto hotel in Bukovel">
+                                </div>
+                                <div class="bigBear__slider-item swiper-slide">
+                                    <img src="/bigBear/assets/images/bigBear-slider-2.jpg" alt="foto hotel in Bukovel">
+                                </div>
+                                <div class="bigBear__slider-item swiper-slide">
+                                    <img src="/bigBear/assets/images/bigBear-slider-3.jpg" alt="foto hotel in Bukovel">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigBear__slider-navigation">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
-                <div class="bigBear__block-slider">
-                    <div class="bigBear__slider swiper-container">
-                        <div class="bigBear__slider-wrapper swiper-wrapper">
-                            <div class="bigBear__slider-item swiper-slide">
-                                <img src="/bigBear/assets/images/bigBear-slider-1.jpg" alt="foto hotel in Bukovel">
-                            </div>
-                            <div class="bigBear__slider-item swiper-slide">
-                                <img src="/bigBear/assets/images/bigBear-slider-2.jpg" alt="foto hotel in Bukovel">
-                            </div>
-                            <div class="bigBear__slider-item swiper-slide">
-                                <img src="/bigBear/assets/images/bigBear-slider-3.jpg" alt="foto hotel in Bukovel">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-navigation">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-
             </div>
         </section>
         <section class="housing">
@@ -374,9 +415,9 @@
             <div class="cottagesAndChalets">
                 <div class="container">
                     <h3 class="title location__title text--white">
-                            Котеджі та Шале
-                        </h3>
-                    <div class="location cottages">               
+                        Котеджі та Шале
+                    </h3>
+                    <div class="location cottages">
                         <div class="foto__block">
                             <ul class="foto__block--left">
                                 <li><a href="#">
@@ -620,7 +661,6 @@
                     </div>
                     <div class="swiper-scrollbar"></div>
                 </div>
-
             </div>
         </section>
         <section class="info">
@@ -747,7 +787,7 @@
                         <div class="contacts__info">
                             <ul class="contacts__info-inner">
                                 <li>
-                                    <ul class="subtitle text--white contacts__info-subtitle">
+                                    <ul class="subtitle text--white contacts__info-subtitle text--bold">
                                         ВІДДІЛ БРОНЮВАННЯ:
                                         <li><a class="contacts__info-phone" href="tel:+38(096)7404337">+38 (096) 740
                                                 4337</a>
@@ -769,7 +809,8 @@
                                         78500</p>
                                 </li>
                                 <li>
-                                    <p class="text contacts__info-text"><span>Авторські шале - </span>Участок Вишні 421,
+                                    <p class="text contacts__info-text"><span class="text--bold">Авторські шале -
+                                        </span>Участок Вишні 421,
                                         Буковель, 78593, Україна, Поляниця,
                                         Івано-Франківська область, 78593
                                     </p>

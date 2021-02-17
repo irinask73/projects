@@ -15,15 +15,37 @@ mobileMenuBtn.addEventListener('click', function () {
 //header menu end
 
 const bigBearSwiper = new Swiper('.bigBear__slider', {
+    centeredSlides: true,
     loop: true,
-    //navigation
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    //margin betwen slider
-    spaceBetween: 10,
     grabCursor: true,
+    pagination: false,
+    speed: 700,
+    autoplay: {
+        delay: 4000,
+    },
+    breakpoints: {
+        375: {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        },
+        900: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+            },
+        }
+    },
 });
 
 const swiper = new Swiper('.slider', {
@@ -34,22 +56,22 @@ const swiper = new Swiper('.slider', {
     loop: true,
     loopAdditionalSlides: 3,
     coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
     },
-    //autoplay: {
-     //   delay: 5000,
-     // },
-      keyboard: {
+    autoplay: {
+        delay: 5000,
+    },
+    keyboard: {
         enabled: true,
-      },
-      scrollbar: {
+    },
+    scrollbar: {
         el: '.swiper-scrollbar',
         hide: false,
-      },
+    },
 });
 
 const reviewsSwiper = new Swiper('.reviews__slider', {
@@ -62,43 +84,42 @@ const reviewsSwiper = new Swiper('.reviews__slider', {
 });
 //SECTION INFO
 //slider
-// Инициализация превью слайдера
-const sliderThumbs = new Swiper('.slider__thumbs.swiper-container', { 
-    direction: 'vertical', 
+const sliderThumbs = new Swiper('.slider__thumbs.swiper-container', {
+    direction: 'vertical',
     loop: true,
     loopAdditionalSlides: 0,
     speed: 500,
     centeredSlides: true,
-	slidesPerView: 3, 
-	spaceBetween: 25, 
-	navigation: { // задаем кнопки навигации
-		nextEl: '.slider__next', 
-		prevEl: '.slider__prev' 
+    slidesPerView: 3,
+    spaceBetween: 25,
+    navigation: { 
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev'
     },
-	freeMode: true, // при перетаскивании превью ведет себя как при скролле
+    freeMode: true, // при перетаскивании превью ведет себя как при скролле
 });
 
 const sliderFront = new Swiper('.slider__front.swiper-container', {
-    slidesPerView: 1, 
-    spaceBetween: 20, 
+    slidesPerView: 1,
+    spaceBetween: 20,
     mousewheel: true, // можно прокручивать изображения колёсиком мыши
     loop: true,
     loopAdditionalSlides: 0,
     speed: 700,
     autoplay: {
         delay: 4000,
-      },
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    navigation: { // задаем кнопки навигации
-		nextEl: '.slider__next', 
-		prevEl: '.slider__prev' 
+    navigation: { 
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev'
     },
     thumbs: { // указываем на превью слайдер
-		swiper: sliderThumbs // указываем имя превью слайдера
-	},
+        swiper: sliderThumbs // указываем имя превью слайдера
+    },
 });
 
 
