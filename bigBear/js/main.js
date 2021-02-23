@@ -92,7 +92,7 @@ const sliderThumbs = new Swiper('.slider__thumbs.swiper-container', {
     centeredSlides: true,
     slidesPerView: 3,
     spaceBetween: 25,
-    navigation: { 
+    navigation: {
         nextEl: '.slider__next',
         prevEl: '.slider__prev'
     },
@@ -113,7 +113,7 @@ const sliderFront = new Swiper('.slider__front.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    navigation: { 
+    navigation: {
         nextEl: '.slider__next',
         prevEl: '.slider__prev'
     },
@@ -139,3 +139,4 @@ for (let i = 0; i < accordionButtons.length; i++) {
         // if the same element has a class 'active' then on click remove the class 'active'
     });
 };
+

@@ -3,6 +3,7 @@
         display: none;
     }
 }
+
 @media (min-width: 500px) {
     .slider__control {
         max-width: 30%;
@@ -22,6 +23,16 @@
         .swiper-button-next::after {
             color: #fe982a;
             font-size: 4rem;
+        }
+    }
+    //ACCOMODATION
+    .accommodation {
+        &__inner {
+            column-gap: 3rem;
+            row-gap: 2.5rem;
+            .accommodation__item {
+                transform: scale(1);
+            }
         }
     }
 }
@@ -100,7 +111,7 @@
             }
             &-item__title {
                 &::after {
-                    content: url(../..assets/icons/chevron-down-bg.svg);
+                    content: url(../../assets/icons/chevron-down-bg.svg);
                 }
                 &.active {
                     &::after {
@@ -146,7 +157,6 @@
         }
     }
     /*SECTION HOUSING*/
-
     .footer {
         &__menu {
             &-wrapper {
@@ -178,6 +188,76 @@
         font-size: 4.8rem;
         line-height: 6.1rem;
     }
+    //SPA
+    .spa {
+        &__inner {
+            align-items: center;
+        }
+    }
+    //ACCOMMODATION
+    .accommodation {
+        &__item {
+            &--left {
+                position: relative;
+                max-width: 35rem;
+                width: 100%;
+                height: 31.7rem;
+                flex-basis: 30%;
+            }
+            &--right {
+                position: relative;
+                max-width: 73rem;
+                width: 100%;
+                height: 31.7rem;
+                flex-basis: 60%;
+            }
+            &-title.slider__title {
+                margin-bottom: 0;
+                color: $color-white;
+            }
+        }
+        &__link {
+            display: block;
+            margin-top: 0;
+            &::after {
+                position: absolute;
+                bottom: 15%;
+            }
+        }
+        &__content {
+            left: 0;
+        }
+    }
+    //SALE
+    .sale {
+        &__block{
+            padding: 15rem 0 9rem;
+        }
+        article &__inner {
+            max-width: 50rem;
+            width: 100%;
+        }
+        form {
+            label {
+                opacity: 0;
+            }
+            input {
+                background: transparent;
+                border-bottom: 0.2rem solid;
+                &::-webkit-input-placeholder {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    //INFO
+    .info{
+        .accommodation__inner{
+            .button{
+                display: none;
+            }
+        }
+    }
 }
 @media (max-width: 700px) {
     .form__booking {
@@ -185,9 +265,23 @@
     }
 }
 @media (min-width: 700px) {
-    .start__button {
-        display: none;
+    .start {
+        &__button {
+            display: none;
+        }
+        .date__arrival,
+        .date__departure {
+            padding-right: 0.5rem;
+            border-right: 1px solid $color-bg;
+            & input {
+                width: 10rem;
+            }
+        }
+        .guests {
+            width: 10rem;
+        }
     }
+
     .bigBear {
         &__slider {
             max-height: 35rem;
@@ -214,6 +308,26 @@
         .swiper-slide.swiper-slide-active {
             z-index: 1;
             transform: scaleX(1.5);
+        }
+    }
+    //SPA
+    .spa {
+        &__inner {
+            flex-direction: row;
+            padding: 7rem 0;
+        }
+        &__info {
+            z-index: 5;
+        }
+        &__image {
+            position: absolute;
+            bottom: 0;
+            max-width: 45rem;
+            right: 0;
+        }
+        &__button {
+            margin: inherit;
+            margin-top: 4.5rem;
         }
     }
 }
@@ -262,11 +376,28 @@
         text-align: left;
         padding-left: 8.5rem;
     }
+    //SPA
+    .spa__image {
+        max-width: 55rem;
+    }
 }
 @media (min-width: 900px) {
     //HEADER
     .header__menu-list li + li {
         margin-left: 4.5rem;
+    }
+    //START
+    .start {
+        .date__arrival,
+        .date__departure {
+            padding-right: 3.5rem;
+            & input {
+                width: auto;
+            }
+        }
+        .guests {
+            width: auto;
+        }
     }
     //BIGBEAR
     .bigBear {
@@ -315,12 +446,31 @@
         order: 1;
         margin-left: 2rem;
     }
+    //SPA
+    .spa__image {
+        max-width: 65rem;
+    }
+        //SALE
+        .sale {
+            article &__inner {
+                max-width: 70rem;
+                width: 100%;
+            }
+           article &__title{
+                font-size: 4.6rem;
+                line-height: 6.15rem;
+            }
+        }
 }
-@media (min-width: 000px) {
+@media (min-width: 1000px) {
     //BIGBEAR
     .bigBear {
         &__slider {
             max-width: 85rem;
         }
+    }
+    //SPA
+    .spa__image {
+        max-width: 85rem;
     }
 }
