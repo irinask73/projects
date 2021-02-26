@@ -272,7 +272,7 @@ strong--text {
     }
     .represent__content,
     .implement__content {
-        width: auto;
+        width:300px;
         height: auto;
     }
     .represent,
