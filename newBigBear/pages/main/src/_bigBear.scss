@@ -1,0 +1,49 @@
+.bigBear {
+    padding-top: 2rem;
+    background: $color-bg;
+    &__title {
+        margin-top: 2rem;
+        font-size: 4.8rem;
+        line-height: 6.14rem;
+    }
+    &__info {
+        margin-top: 3rem;
+        color: $color-white;
+        & p + p {
+            margin-bottom: 2rem;
+        }
+        li::before {
+            content: "•";
+        }
+    }
+}
+/*slider*/
+
+.bigBear {
+    &__block-slider {
+        position: relative;
+        padding: 8rem 0;
+    }
+    &__slider {
+        max-width: 26.8rem;
+        width: 100%;
+        height: 17rem;
+        &-item img{
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+    }
+    &__slider--wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide.swiper-slide-active {
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: $color-white;
+    font-size: 2rem;
+}

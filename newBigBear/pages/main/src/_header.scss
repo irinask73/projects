@@ -1,0 +1,75 @@
+.header {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    padding-top: 3rem;
+    transition: all 1s;
+    &__menu {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            display: none;
+        }
+        &-btn {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 2.4rem;
+            height: 2.4rem;
+            cursor: pointer;
+
+            & div {
+                width: 1.8rem;
+                height: 0.2rem;
+                background-color: $color-gray;
+                transition-duration: 0.5s, 0.5s;
+            }
+        }
+        &-right {
+            font-weight: 600;
+        }
+        &-title {
+            margin-bottom: 3rem;
+        }
+        &-list {
+            color: $color-gray;
+            & li {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+/*active menu style*/
+.header.active {
+    background: top / cover url(../../assets/images/active-bg.jpg);
+}
+.header__menu-btn.active {
+    & div:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    & div:nth-child(2) {
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    & div:nth-child(3) {
+        display: none;
+    }
+}
+.header__menu.active {
+    display: block;
+    height: 100vh;
+}
+.header__menu-left.active {
+    display: block;
+    text-align: center;
+    margin-top: 30%;
+    animation-name: animatedMenuLeft;
+    animation-duration: 1.5s;
+}
+.header__menu-right.active {
+    display: none;
+}

@@ -1,0 +1,29 @@
+$color-bg-button: #fe982a;
+$color-white: #ffffff;
+$color-yellow: #fe982a;
+$color-activ-pagination: #FF8C22;
+$color-bg: #171B18;
+$color-gray: #f2f2f2;
+$color-light-beige: #EFEFEF;
+$color-light-grey: #3c3c3c;
+$color-dark-grey: #262B27;
+$color-light-black:#1C201D;
+$color-nero: #151515;
+
+@mixin title {
+    font-family: "Lora", serif;    
+    font-weight: 400;
+    color: $color-white;
+}
+
+@mixin subtitle {
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.95rem;
+    text-transform: uppercase;
+    color: $color-yellow;
+}
+

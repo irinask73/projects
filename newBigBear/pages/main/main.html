@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigBear</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>Bukovel</h1>
+    <header class="header" data-header>
+        <div class="container">
+            <div class="header__menu text--header" data-headerMenu>
+                <div class="header__menu-btn" data-mobileMenuBtn>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="header__menu-left" data-menuLeft>
+                    <nav>
+                        <h3 class="title text--white header__menu-title">Меню</h3>
+                        <ul class="text--header header__menu-list">
+                            <li class="menu__item"><a href="#">Головна</a></li>
+                            <li class="menu__item"><a href="#">Буковель</a></li>
+                            <li class="menu__item"><a href="../yaremche/yaremche.html">Яремче</a></li>
+                            <li class="menu__item"><a href="#">Котеджі</a></li>
+                            <li class="menu__item"><a href="#">Chalet</a></li>
+                            <li class="menu__item"><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text--white text--header header__menu-right" data-menuRight>
+                    <a href="tel:
+                +38 (096) 740 4337" class="phone">
+                        +38 (096) 740 4337</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="start">
+            <div class="container">
+                <div class="start__wrapper">
+                    <h3 class="title text--white start__title">Велика Ведмедиця</h3>
+                    <div class="start__subtitle">
+                        <h4 class="start__subtitle-item subtitle linetext">Мережа готелів та котеджів в
+                        </h4>
+                        <h4 class="start__subtitle-item subtitle">Буковелі та Яремче</h4>
+                    </div>
+                    <div class="form__booking">
+                        <form action="#" method="post">
+                            <div class="form__inner">
+                                <div class="booking__location">
+                                    <div class="booking__location-inner">
+                                        <label for="location" class="text--header text--uppercase text--bold">Бронювання
+                                            номерів</label>
+                                        <input list="drop-location" id="location" type="text" name="location"
+                                            class="text--header" placeholder="Гарантоване заселення" required>
+                                    </div>
+                                    <datalist id="drop-location">
+                                        <option class="text" value="Ведмежий двір Буковель">
+                                        <option class="text" value="Велика Ведмедиця Яремче">
+                                        <option class="text" value="Шале">
+                                        <option class="text" value="Котеджі">
+                                    </datalist>
+                                </div>
+                                <div class="date__arrival">
+                                    <label for="arrival" class="text--form text--bold">Дата заїзду</label>
+                                    <input type="date" id="arrival" name="trip-start">
+                                </div>
+                                <div class="date__departure">
+                                    <label for="departure" class="text--form text--bold">Дата виїзду</label>
+                                    <input type="date" id="departure" name="trip-end">
+                                </div>
+                                <div class="guests">
+                                    <p class="text--header text--uppercase text--bold">Кількість гостей?</p>
+                                    <div class="guest__choice">
+                                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <input type="number" min="0" max="10" value="0" readonly
+                                            class="text guest__choice-step" required>
+                                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    </div>
+                                </div>
+
+                                <button class="form__button"></button>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="#" class="button start__button">Бронювання номерів</a>
+                </div>
+            </div>
+        </section>
+        <section class="bigBear">
+            <div class="container">
+                <div class="bigBear__block flex--column">
+                    <div class="bigBear__block-info">
+                        <div class="subtitle__block">
+                            <h4 class="subtitle linetext">АТМОСФЕРНИЙ</h4>
+                            <h4 class="subtitle">ВІДПОЧИНОК В ГОРАХ</h4>
+                            <h2 class="title bigBear__title text--white">Велика ведмедиця</h2>
+                            <div class="bigBear__info text">
+                                <p>
+                                    Отримайте комплексний відпочинок, а не ключі від номеру.
+                                </p>
+                                <p class="text--orange">
+                                    У нас європейський сервіс та домашня атмосфера затишку і гостинності.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Готельно-ресторанний комплекс "Ведмежий Двір" у Буковелі
+                                    </li>
+                                    <li>
+                                        Family готель в Яремче
+                                    </li>
+                                    <li>
+                                        Елітні котеджі від Яремча до Буковеля
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigBear__block-slider">
+                        <div class="bigBear__slider swiper-container">
+                            <div class="bigBear__slider-wrapper swiper-wrapper">
+                                <div class="bigBear__slider-item swiper-slide">
+                                    <img src="../../assets/images/bigBear-slider-1.jpg" alt="foto hotel in Bukovel">
+                                </div>
+                                <div class="bigBear__slider-item swiper-slide">
+                                    <img src="../../assets/images/bigBear-slider-2.jpg" alt="foto hotel in Bukovel">
+                                </div>
+                                <div class="bigBear__slider-item swiper-slide">
+                                    <img src="../../assets/images/bigBear-slider-3.jpg" alt="foto hotel in Bukovel">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigBear__slider-navigation">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="housing">
+            <div class="container">
+                <h3 class="title housing__title">
+                    Варіанти проживання
+                </h3>
+                <div class="housing__slider">
+                    <div class="slider swiper-container">
+                        <div class="slider__wrapper swiper-wrapper">
+                            <div class="slider__item swiper-slide">
+                                <div class="slider__image"
+                                    style="background-image: linear-gradient(0deg, #000000 -65%, rgba(0, 0, 0, 0)), url(../../assets/images/bigBear-slider-1.jpg);">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">Готельно-ресторанний комплекс у Буковелі</h4>
+                                    <ul class="slider__info">
+                                        <li>шведські сніданки</li>
+                                        <li>панорамний ресторан "Honey"...</li>
+                                        <li>конференц сервіс - до 100 осіб</li>
+                                    </ul>
+                                    <a href="#" class="slider__link">Переглянути</a>
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="slider__image"
+                                    style="background-image: linear-gradient(0deg, #000000 -65%, rgba(0, 0, 0, 0)), url(../../assets/images/husing-slider-2.jpg);">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">Котеджі в Буковелі та Яремче</h4>
+                                    <ul class="slider__info">
+                                        <li>Цікаве дозвілля для ваших дітей гарантовано</li>
+                                        <li>7 видів гуцульських сніданків ...</li>
+                                        <li>Гуцульське СПА просто неба</li>
+                                    </ul>
+                                    <a href="#" class="slider__link">Переглянути</a>
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="slider__image"
+                                    style="background-image: linear-gradient(0deg, #000000 -65%, rgba(0, 0, 0, 0)), url(../../assets/images/husing-slider-3.jpg);">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">Найкращий Family готель в Яремче</h4>
+                                    <ul class="slider__info">
+                                        <li>Басейн з підігрівом</li>
+                                        <li>Літня тераса + зона відпочинку з мангалом</li>
+                                        <li>Безкоштовна парковка</li>
+                                    </ul>
+                                    <a href="#" class="slider__link">Переглянути</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="bukovel">
+                    <div class="location">
+                        <div class="foto__block">
+                            <ul class="foto__block--left">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/bukovel-1-big.jpg">
+                                            <img src="../../assets/images/bukovel-1.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/bukovel-3-big.jpg">
+                                            <img src="../../assets/images/bukovel-3.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="foto__block--right">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/bukovel-2-big.jpg">
+                                            <img src="../../assets/images/bukovel-2.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/bukovel-4-big.jpg">
+                                            <img src="../../assets/images/bukovel-4.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__block text">
+                            <div class="info__subtitle">
+                                <h4 class="subtitle linetext">Найкращі номери та котеджі</h4>
+                                <h4 class="subtitle">у центрі Карпат</h4>
+                            </div>
+                            <h3 class="title location__title">
+                                Готель в Буковель
+                            </h3>
+                            <p>
+                                Готель "Ведмежий Двір" знаходиться в с. Поляниця.
+                            </p>
+                            <p>
+                                В готелі є 24 номери та 2-а окремих дерев'яних котеджа
+                                з каміном.
+                            </p>
+                            <ul>
+                                До ваших послуг:
+                                <li>шведський сніданок (включений у вартість)</li>
+                                <li><a href="#">новий ресторан Honey</a></li>
+                                <li>дитяча кімната</li>
+                                <li><a href="#">гуцульське СПА (баня, гарячі діжки)</a></li>
+                                <li>прокат лижного спорядження</li>
+                                <li>BBQ-place</li>
+                                <li>конференц сервіс</li>
+                                <li>автостоянка</li>
+                            </ul>
+                            <a href="#" class="location__link">Переглянути номери</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="honey">
+                    <div class="location">
+                        <div class="foto__block">
+                            <ul class="foto__block--left">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/honey-1-big.jpg">
+                                            <img src="../../assets/images/honey-1.jpg" alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/honey-3-big.jpg">
+                                            <img src="../../assets/images/honey-3.jpg" alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="foto__block--right">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/honey-2-big.jpg">
+                                            <img src="../../assets/images/honey-2.jpg" alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/honey-4-big.jpg">
+                                            <img src="../..assets/images/honey-4.jpg" alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__block text">
+                            <div class="info__subtitle">
+                                <h4 class="subtitle linetext">УКРАЇНСЬКА ТА</h4>
+                                <h4 class="subtitle">ЄВРОПЕЙСЬКА КУХНЯ</h4>
+                            </div>
+                            <h3 class="title location__title">
+                                Ресторан <span class="text--uppercase">HONEY</span>
+                            </h3>
+                            <p class="honey--text">
+                                Ми відкрили новий ресторан, де вас будуть дивувати поєднанням української та
+                                європейської
+                                кухонь.
+                            </p>
+                            <p>
+                                Бренд-шеф Дмитро Кузнєцов ітерпретує традиційні рецептури на сучасний лад й окрім
+                                професійного досвіду додає до кожної страви особливий інгредієнт, – Любов!
+                            </p>
+                            <div class="link__block">
+                                <a href="#" class="location__link">Меню</a>
+                                <a href="#" class="location__link">Напої</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yaremche">
+                    <div class="location">
+                        <div class="foto__block">
+                            <ul class="foto__block--left">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/yaremche-1-big.jpg">
+                                            <img src="../../assets/images/yaremche-1.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/yaremche-3-big.jpg">
+                                            <img src="../../assets/images/yaremche-3.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="foto__block--right">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/yaremche-2-big.jpg">
+                                            <img src="../../assets/images/yaremche-2.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/yaremche-4-big.jpg">
+                                            <img src="../../assets/images/yaremche-4.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__block text">
+                            <div class="info__subtitle">
+                                <h4 class="subtitle linetext">затишні номери та</h4>
+                                <h4 class="subtitle">котеджі в Яремче</h4>
+                            </div>
+                            <h3 class="title location__title">
+                                Готель в Яремче
+                            </h3>
+                            <p>
+                                Готель "Велика Ведмедиця" знаходиться в м. Яремче
+                                В готелі є 16 номерів та 2-а окремих дерев'яних котеджа з каміном (за межами готелю)
+                            </p>
+                            <ul>
+                                До ваших послуг:
+                                <li>7 видів гуцульських сніданків</li>
+                                <li>дитяча кімната</li>
+                                <li>басейн з підігрівом</li>
+                                <li><a href="#">гуцульське СПА (баня, гарячі діжки)</a></li>
+                                <li>сауна</li>
+                                <li>BBQ-place</li>
+                                <li>автостоянка</li>
+                            </ul>
+                            <a href="#" class="location__link">Переглянути номери</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cottagesAndChalets">
+                <div class="container">
+                    <h3 class="title location__title text--white">
+                        Котеджі та Шале
+                    </h3>
+                    <div class="location cottages">
+                        <div class="foto__block">
+                            <ul class="foto__block--left">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/schale-1-big.jpg">
+                                            <img src="../../assets/images/schale-1.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/schale-3-big.jpg">
+                                            <img src="../../assets/images/schale-3.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="foto__block--right">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/schale-2-big.jpg">
+                                            <img src="../../assets/images/schale-2.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/yaremche-1-big.jpg">
+                                            <img src="../../assets/images/yaremche-1.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__block text">
+                            <div class="info__subtitle">
+                                <h4 class="subtitle linetext">В БУКОВЕЛІ ТА ЯРМЧЕ</h4>
+                            </div>
+                            <h3 class="title location__title text--white">
+                                Котеджі
+                            </h3>
+                            <p class="text--orange">
+                                Європейський сервіс та затишок як вдома
+                            </p>
+                            <ul>
+                                До ваших послуг:
+                                <li>Басейн з підігрівом</li>
+                                <li>Літня тераса + зона відпочинку з мангалом</li>
+                                <li>Дитяча кімната</li>
+                                <li> Безкоштовна парковка</li>
+                                <li>прокат лижного спорядження</li>
+                                <li>Власна кухня та неймовірні краєвиди</li>
+                            </ul>
+                            <a href="#" class="location__link">Переглянути</a>
+                        </div>
+                    </div>
+                    <div class="location chale">
+                        <div class="foto__block">
+                            <ul class="foto__block--left">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/cottage-1-big.jpg">
+                                            <img src="../../assets/images/cottage-1.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/cottage-3-big.jpg">
+                                            <img src="../../assets/images/cottage-3.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="foto__block--right">
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/cottage-2-big.jpg">
+                                            <img src="../../assets/images/cottage-2.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <picture>
+                                            <source media="(min-width: 400px)"
+                                                srcset="../../assets/images/cottage-4-big.jpg">
+                                            <img src="../../assets/images/cottage-4.jpg"
+                                                alt="foto housing in Bukovel">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__block text">
+                            <div class="info__subtitle">
+                                <h4 class="subtitle linetext">В БУКОВЕЛІ</h4>
+                            </div>
+                            <h3 class="title location__title text--white">
+                                Авторські Шале
+                            </h3>
+                            <ul>
+                                <li>Сучасні шале та апартаменти в котеджному містечку закритого типу в ТК
+                                    “Буковель”.
+                                </li>
+                                <li>Поруч: ресторани, аптеки, розважальні центри, магазини, Озеро Молодості, SPA,
+                                    нічний
+                                    клуб.</li>
+                            </ul>
+                            <a href="#" class="location__link">Переглянути</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h3 class="title">Нам довіряють</h3>
+                <div class="reviews__slider swiper-container">
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="reviews__slider--item swiper-slide">
+                            <h4 class="slider__subtitle subtitle linetext">Оксана</h4>
+                            <div class="slider__content text reviews__slider--content">
+                                <p class="slider__text slider__text reviews__slider-text">Наилучшее соотношение из тех,
+                                    что я встречала - цены и размещения. Практически в пару метрах ходьбы от центра, но
+                                    в тихом, спокойном месте. Есть все условия для отдыха с детьми. Приятно обустроенный
+                                    домик, двор и все удобства в номере. И внимательность администраторов приятно
+                                    порадовала. Для отдыха и релакса прекрасный вариант отеля! Благодарю за это! P.S.
+                                    Для тех, кто хочет больше активности - в отеле есть бильярд. сауна и басейн. А также
+                                    конфернец зал, где можно проводить тренинги, семинары или встречи.
+                                    Наилучшее соотношение из тех, что я встречала - цены и размещения. Практически в
+                                    пару метрах ходьбы от центра, но в тихом, спокойном месте. Есть все условия для
+                                    отдыха с детьми. Приятно обустроенный домик, двор и все удобства в номере. И
+                                    внимательность администраторов приятно порадовала. Для отдыха и релакса прекрасный
+                                    вариант отеля! Благодарю за это! P.S. Для тех, кто хочет больше активности - в отеле
+                                    есть бильярд. сауна и басейн. А также конфернец зал, где можно проводить тренинги,
+                                    семинары или встречи.
+                                </p>
+                                <a href="#" class="text--orange">Відкрити повністю</a>
+                            </div>
+                        </div>
+                        <div class="reviews__slider--item swiper-slide">
+                            <h4 class="slider__subtitle subtitle linetext">Олександр</h4>
+                            <div class="slider__content text reviews__slider--content">
+                                <p class="slider__text slider__text reviews__slider-text">Вже давно відомо, що
+                                    читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+                                    Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне
+                                    розподілення літер на відміну від, наприклад, "Тут іде текст.
+                                </p>
+                                <a href="#" class="text--orange">Відкрити повністю</a>
+                            </div>
+                        </div>
+                        <div class="reviews__slider--item swiper-slide">
+                            <h4 class="slider__subtitle subtitle linetext">Оксана</h4>
+                            <div class="text reviews__slider--content">
+                                <p class="slider__text reviews__slider-text">Наилучшее соотношение из тех,
+                                    что я встречала - цены и размещения. Практически в пару метрах ходьбы от центра, но
+                                    в тихом, спокойном месте. Есть все условия для отдыха с детьми. Приятно обустроенный
+                                    домик, двор и все удобства в номере. И внимательность администраторов приятно
+                                    порадовала. Для отдыха и релакса прекрасный вариант отеля! Благодарю за это! P.S.
+                                    Для тех, кто хочет больше активности - в отеле есть бильярд. сауна и басейн. А также
+                                    конфернец зал, где можно проводить тренинги, семинары или встречи.
+                                    Наилучшее соотношение из тех, что я встречала - цены и размещения. Практически в
+                                    пару метрах ходьбы от центра, но в тихом, спокойном месте. Есть все условия для
+                                    отдыха с детьми. Приятно обустроенный домик, двор и все удобства в номере. И
+                                    внимательность администраторов приятно порадовала. Для отдыха и релакса прекрасный
+                                    вариант отеля! Благодарю за это! P.S. Для тех, кто хочет больше активности - в отеле
+                                    есть бильярд. сауна и басейн. А также конфернец зал, где можно проводить тренинги,
+                                    семинары или встречи.
+                                </p>
+                                <a href="#" class="text--orange">Відкрити повністю</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider__control">
+                    <button class="slider__button button--left"></button>
+                    <button class="slider__button button--right"></button>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h3 class="title housing__title">
+                    Ключові переваги
+                </h3>
+                <div class="slider swiper-container">
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image"
+                                style="background-image: url(../../assets/images/advantages-slider-1.jpg);">
+                            </div>
+                            <div class="slider__content">
+                                <h2 class="slider__title">9.0 на Booking.com</h2>
+                                <p class="slider__info">156 правдивих відгуків на сайті Booking.com, 244 відгука на
+                                    Google Business
+                                </p>
+                                <a href="#" class="slider__link">Переглянути</a>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image"
+                                style="background-image: url(../../assets/images/advantages-slider-2.jpg);">
+                            </div>
+                            <div class="slider__content">
+                                <h3 class="slider__title">Finalist 2019</h3>
+                                <p class="slider__info">
+                                    "Ведмежий Двір" став фіналістом міжнародного конкурсу в номінації - "Кращий зелений
+                                    готель"
+                                </p>
+                                <a href="#" class="slider__link">Переглянути</a>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image"
+                                style="background-image: url(../../assets/images/advantages-slider-3.jpg);">
+                            </div>
+                            <div class="slider__content">
+                                <h3 class="slider__title">Басейн з підігрівом
+                                </h3>
+                                <p class="slider__info">На території готелю "Ведмежий Двір" є великий басейн з
+                                    підігрівом
+                                </p>
+                                <a href="#" class="slider__link">Переглянути</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <section class="foto__slider">
+                    <div class="slider__flex">
+                        <div class="slider__front swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="../../assets/images/foto-slider-1.jpg"
+                                            alt="mountains in Bukovel Ukraine">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="../../assets/images/foto-slider-2.jpg"
+                                            alt="view from the hotel balcony to the forest">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="../../assets/images/foto-slider-3.jpg"
+                                            alt="hotel in Bukovel Ukraine">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__front-item">
+                                        <img src="../../assets/images/foto-slider-4.jpg"
+                                            alt="evening view of the hotel">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__front-pagination swiper-pagination"></div>
+                        </div>
+
+                        <div class="slider__col">
+                            <div class="slider__prev"></div> <!-- Кнопка для переключения на предыдущий слайд -->
+                            <div class="slider__thumbs swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="../../assets/images/foto-slider-1.jpg"
+                                                alt="mountains in Bukovel Ukraine">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="../../assets/images/foto-slider-2.jpg"
+                                                alt="view from the hotel balcony to the forest">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="../../assets/images/foto-slider-3.jpg"
+                                                alt="hotel in Bukovel Ukraine">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__thumbs-item">
+                                            <img src="../../assets/images/foto-slider-4.jpg"
+                                                alt="evening view of the hotel">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__next"></div> <!-- Кнопка для переключения на следующий слайд -->
+                        </div>
+
+                    </div>
+                </section>
+                <div class="questions">
+                    <div class="accordion">
+                        <h2 class="title text--white accordion__title">Часті запитання</h2>
+                        <div class="accordion__content">
+                            <ul class="accordion__items">
+                                <li class="accordion__item">
+                                    <div class="accordion-item__title text">
+                                        Чи є в готелі ресторан?
+                                    </div>
+                                    <div class="accordion-item__text">
+                                        Так в готелі є ресторан, де можна покуштувати смачні гуцульські страви
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion-item__title text">
+                                        Чи можу я оплатити рахунок по прибуттю?
+                                    </div>
+                                    <div class="accordion-item__text">
+                                        Так в готелі є ресторан, де можна покуштувати смачні гуцульські страви
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion-item__title text">
+                                        Включений сніданок у вартість і який тип сніданку пропонується?
+                                    </div>
+                                    <div class="accordion-item__text">
+                                        Так в готелі є ресторан, де можна покуштувати смачні гуцульські страви
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion-item__title text">
+                                        Чи можу я відмінити бронювання?
+                                    </div>
+                                    <div class="accordion-item__text">
+                                        Так в готелі є ресторан, де можна покуштувати смачні гуцульські страви
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts__background">
+                    <h3 class="title text--white contacts__title">
+                        Наші контакти
+                    </h3>
+                    <div class="contacts__wrapper container">
+                        <div class="contacts__image">
+                            <img class="contacts__image" src="../../assets/images/contacts-bg.jpg"
+                                alt="google map Ukraine Ivano Frankovsk">
+                        </div>
+                        <div class="contacts__info">
+                            <ul class="contacts__info-inner">
+                                <li>
+                                    <ul class="subtitle text--white contacts__info-subtitle text--bold">
+                                        ВІДДІЛ БРОНЮВАННЯ:
+                                        <li><a class="contacts__info-phone" href="tel:+38(096)7404337">+38 (096) 740
+                                                4337</a>
+                                        </li>
+                                        <li><a class="contacts__info-email"
+                                                href="mailto:hotel@vedmedycya.com.ua">+hotel@vedmedycya.com.ua</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="text contacts__info-text"><span>Ведмежий Двір - </span> вулиця Карпатська,
+                                        1/1,
+                                        Поляниця, Івано-Франківська
+                                        область, t8593</p>
+                                </li>
+                                <li>
+                                    <p class="text contacts__info-text"><span>Велика Ведмедиця - </span>вул.
+                                        Вітовського, 5,
+                                        Яремче, Івано-Франківська область,
+                                        78500</p>
+                                </li>
+                                <li>
+                                    <p class="text contacts__info-text"><span class="text--bold">Авторські шале -
+                                        </span>Участок Вишні 421,
+                                        Буковель, 78593, Україна, Поляниця,
+                                        Івано-Франківська область, 78593
+                                    </p>
+                                </li>
+                                <li>
+                                    <ul class="contacts__info-link">
+                                        <li><a href="#" class="link--facebook"></a></li>
+                                        <li><a href="#" class="link--instagram"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- block with scrolling-->
+                <div class="container">
+                    <div class="contacts__info-scrolling">
+                        <div class="contacts__info-scrolling--inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non pretium turpis porttitor
+                                augue
+                                sed sed elementum. Nisi risus pretium rutrum non condimentum vulputate purus. Mauris
+                                rhoncus
+                                egestas
+                                quam elementum ligula viverra semper. Tincidunt porttitor quam quisque dolor eget
+                                consequat
+                                pellentesque. Nec in netus amet varius. At nulla gravida nisl elementum. Malesuada
+                                odio
+                                hendrerit in ut consequat, nulla nulla. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Non pretium turpis porttitor augue
+                                sed sed elementum. Nisi risus pretium rutrum non condimentum vulputate purus. Mauris
+                                rhoncus
+                                egestas
+                                quam elementum ligula viverra semper. Tincidunt porttitor quam quisque dolor eget
+                                consequat
+                                pellentesque. Nec in netus amet varius. At nulla gravida nisl elementum. Malesuada
+                                odio
+                                hendrerit in ut consequat, nulla nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__menu text--white">
+                <div class="footer__menu-wrapper text">
+                    <div class="footer__menu-item">
+                        <h3 class="footer__menu-title">Меню</h3>
+                        <ul>
+                            <li><a href="#">Буковель</a></li>
+                            <li><a href="#">Яремче</a></li>
+                            <li><a href="#">Котеджі</a></li>
+                            <li><a href="#">Chalet</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-phone contacts__info-phone"><a href="tel:+380967404337">+38 (096) 740
+                            4337</a></div>
+                    <div class="footer__menu-item">
+                        <ul class="contacts__info-link">
+                            <li><a href="#" class="link--facebook"></a></li>
+                            <li><a href="#" class="link--instagram"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-item"><a href="#">
+                            <img src="../../assets/images/logo.png" alt="image logo Big Bear firm">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

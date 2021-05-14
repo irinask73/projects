@@ -1,0 +1,29 @@
+.spa {
+    position: relative;
+    background-color: $color-bg;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 2.71%, rgba(0, 0, 0, 0) 100%),
+        url(../../assets/images/spa-bg.jpg);
+    & .container {
+        position: static;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding-top: 7rem;
+    }
+    &__info {
+        max-width: 50rem;
+        width: 100%;
+        & p + p {
+            margin-top: 2rem;
+        }
+    }
+    &__button {
+        position: relative;
+        margin-top: 4.5rem;
+        &::after {
+            content: url(../../assets/icons/arrow-button.svg);
+            margin-left: 1rem;
+        }
+    }
+}
