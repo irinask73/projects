@@ -80,7 +80,7 @@ body {
 .upper--text {
     text-transform: uppercase;
 }
-strong--text {
+.strong--text {
     font-weight: 500;
 }
 .bg--img {
@@ -216,8 +216,7 @@ strong--text {
     height: 20px;
 }
 .social-link:hover {
-    width: 30px;
-    height: 30px;
+   transform: scale(1.5);
 }
 .link-email {
     content: url(assets/mail.svg);
