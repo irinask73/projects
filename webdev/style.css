@@ -47,6 +47,7 @@ select {
 a,
 button {
     cursor: pointer;
+    transition: all .5s ease;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -515,7 +516,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.btn__store:hover {
+.btn__inner:hover .btn__store{
     background: #009cc2;
 }
 @media (max-width: 500px) {
