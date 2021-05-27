@@ -964,7 +964,6 @@ form {
           align-items: center;
   height: 5.4rem;
   padding: 2rem;
-  margin-bottom: 1rem;
   background-color: #3c3c3c;
 }
 
@@ -993,16 +992,17 @@ form {
   background-color: #262B27;
   visibility: visible;
   opacity: 1;
-  -webkit-transition: opacity 1s linear;
-  transition: opacity 1s linear;
+  -webkit-transition: 1s cubic-bezier(0.25, 0.1, 0.07, 1.03) all;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.07, 1.03) all;
 }
 
 .accordion-item__text {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0s 0.5s, opacity 0.5s linear;
-  transition: visibility 0s 0.5s, opacity 0.5s linear;
   font-size: 1.3rem;
+  height: 2rem;
+  -webkit-transition: 1s cubic-bezier(0.25, 0.1, 0.07, 1.03) all;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.07, 1.03) all;
 }
 
 .footer {
