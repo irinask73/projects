@@ -60,13 +60,18 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
 }
 .container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+.full-width{
+position: relative;
+width: 100vw;
+margin-left: -50vw;
+left: 50%;
 }
 .flex {
     display: flex;
