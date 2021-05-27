@@ -1,0 +1,18 @@
+//MENU HEADER
+.menu__item:hover,
+.phone:hover,
+.footer__menu-phone:hover{
+    @include hover_effect_menu;
+}
+//LOCATION IN SECTION HOUSING
+.location__link:hover{
+    @include hover_effect_location;
+}
+//REVIEVS
+.reviews__slider-link:hover{
+    @include hover_effect_location
+}
+//ICON INSTAGRAMM AND FACEBOOK
+.link__social-icon:hover{
+    @include hover_link_social_icon
+}

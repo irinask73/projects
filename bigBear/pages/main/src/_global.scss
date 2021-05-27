@@ -14,11 +14,11 @@ a {
     display: inline-block;
 }
 input,
-.accordion__item{
+.accordion__item {
     cursor: pointer;
 }
 h1 {
-  font-size: 0;
+    font-size: 0;
 }
 .button {
     display: flex;
@@ -77,80 +77,30 @@ img {
 .text--uppercase {
     text-transform: uppercase;
 }
-.text--bold{
+.text--bold {
     font-weight: 600;
 }
 .text--header {
     font-size: 1.6rem;
     line-height: 1.95rem;
 }
-.text--form{
+.text--form {
     font-size: 1.2rem;
 }
-.text--input{
+.text--input {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.7rem;
 }
-.flex--column{
+.flex--column {
     display: flex;
     flex-direction: column;
 }
-.page-housing {
-    background-color: $color-bg;
-}
-/*location block start*/
-.location {
-    display: flex;
-    flex-direction: column;
-    margin: 4.5rem auto 3rem;
-    align-items: center;
-    &__title {
-        margin-bottom: 3rem;
-    }
-    &__link {
-        margin-top: 2.5rem;
-        font-size: 1.8rem;
-        line-height: 2.19rem;
-        color: $color-yellow;
+.link__social {
+    &-icon {
+        stroke: white;
+        fill: transparent;
         transition: 0.6s ease all;
-        &::after {
-            content: url(../../assets/icons/arrow-right-orange.svg);
-            margin-left: 0.5rem;
-        }
-        &:hover{
-            @include hover_effect_location;
-        }
-    }
-    .foto__block {
-        display: flex;
-        column-gap: 1.5rem;
-        justify-content: center;
-        margin-bottom: 3.4rem;
-        max-width: 54rem;
-        width: 100%;
-        &--left {
-            margin-top: 20%;
-        }
-        &--left li + li,
-        &--right li + li {
-            margin-top: 1.5rem;
-        }
-    }
-    .info__block {
-        margin-bottom: 2.5rem;
-        & ul {
-            margin-top: 1.5rem;
-        }
-        li::before {
-            content: "•";
-            padding-right: 0.5rem;
-        }
-    }
-    .link__block {
-        display: flex;
-        justify-content: space-around;
     }
 }
-/*location block end*/

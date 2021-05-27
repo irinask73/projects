@@ -70,11 +70,11 @@
                                 </div>
                                 <div class="date__arrival">
                                     <label for="arrival" class="text--form text--bold">Дата заїзду</label>
-                                    <input type="date" id="arrival" name="trip-start">
+                                    <input class="text--input" type="date" id="arrival" name="trip-start">
                                 </div>
                                 <div class="date__departure">
                                     <label for="departure" class="text--form text--bold">Дата виїзду</label>
-                                    <input type="date" id="departure" name="trip-end">
+                                    <input class="text--input" type="date" id="departure" name="trip-end">
                                 </div>
                                 <div class="guests">
                                     <p class="text--header text--uppercase text--bold">Кількість гостей?</p>
@@ -508,10 +508,22 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <ul class="contacts__info-link">
-                                        <li><a href="#" class="link--facebook"></a></li>
-                                        <li><a href="#" class="link--instagram"></a></li>
-                                    </ul>
+                                    <div class="contacts__info-link">
+                                        <div class="link__social">
+                                            <a href="#">
+                                                <svg class="link__social-icon" width="26" height="26">
+                                                    <use xlink:href="../../assets/icons/icons-social.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="link__social">
+                                            <a href="#">
+                                                <svg class="link__social-icon" width="26" height="26">
+                                                    <use xlink:href="../../assets/icons/icons-social.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -555,20 +567,32 @@
                     <div class="footer__menu-item">
                         <h3 class="footer__menu-title">Меню</h3>
                         <ul>
-                            <li><a href="#">Буковель</a></li>
-                            <li><a href="#">Яремче</a></li>
-                            <li><a href="#">Котеджі</a></li>
-                            <li><a href="#">Chalet</a></li>
-                            <li><a href="#">Контакти</a></li>
+                            <li class="menu__item"><a href="#">Буковель</a></li>
+                            <li class="menu__item"><a href="#">Яремче</a></li>
+                            <li class="menu__item"><a href="#">Котеджі</a></li>
+                            <li class="menu__item"><a href="#">Chalet</a></li>
+                            <li class="menu__item"><a href="#">Контакти</a></li>
                         </ul>
                     </div>
                     <div class="footer__menu-phone contacts__info-phone"><a href="tel:+380967404337">+38 (096) 740
                             4337</a></div>
                     <div class="footer__menu-item">
-                        <ul class="contacts__info-link">
-                            <li><a href="#" class="link--facebook"></a></li>
-                            <li><a href="#" class="link--instagram"></a></li>
-                        </ul>
+                        <div class="contacts__info-link">
+                            <div class="link__social">
+                                <a href="#">
+                                    <svg class="link__social-icon" width="26" height="26">
+                                        <use xlink:href="../../assets/icons/icons-social.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="link__social">
+                                <a href="#">
+                                    <svg class="link__social-icon" width="26" height="26">
+                                        <use xlink:href="../../assets/icons/icons-social.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="footer__menu-item"><a href="#">
                             <img src="../../assets/images/logo.png" alt="image logo Big Bear firm">

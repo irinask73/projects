@@ -1,19 +1,72 @@
+.page-housing {
+    background-color: $color-bg;
+}
 .housing {
     margin-top: 4.9rem;
     &__title {
         margin-bottom: 4.4rem;
     }
     .honey {
-        &--text{
+        &--text {
             margin-bottom: 2rem;
         }
     }
-    .cottagesAndChalets{
+    .cottagesAndChalets {
         padding: 3.5rem 0;
         background: $color-bg;
         color: $color-white;
-        .location{
+        .location {
             margin-top: 0;
         }
+    }
+}
+// LOCATION
+.location {
+    display: flex;
+    flex-direction: column;
+    margin: 4.5rem auto 3rem;
+    align-items: center;
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__link {
+        margin-top: 2.5rem;
+        font-size: 1.8rem;
+        line-height: 2.19rem;
+        color: $color-yellow;
+        transition: 0.6s ease all;
+        &::after {
+            content: url(../../assets/icons/arrow-right-orange.svg);
+            margin-left: 0.5rem;
+        }
+    }
+    .foto__block {
+        display: flex;
+        column-gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 3.4rem;
+        max-width: 54rem;
+        width: 100%;
+        &--left {
+            margin-top: 20%;
+        }
+        &--left li + li,
+        &--right li + li {
+            margin-top: 1.5rem;
+        }
+    }
+    .info__block {
+        margin-bottom: 2.5rem;
+        & ul {
+            margin-top: 1.5rem;
+        }
+        li::before {
+            content: "•";
+            padding-right: 0.5rem;
+        }
+    }
+    .link__block {
+        display: flex;
+        justify-content: space-around;
     }
 }
