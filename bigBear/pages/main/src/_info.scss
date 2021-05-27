@@ -135,18 +135,13 @@
         }
         &-link {
             display: flex;
-            & li {
+            & div{
                 width: 2.4rem;
                 height: 2.4rem;
+                transition: 0.6s ease all;
             }
-            & li + li {
+            & div + div {
                 margin-left: 2rem;
-            }
-            .link--facebook {
-                content: url(../../assets/icons/icon-facebook.svg);
-            }
-            .link--instagram {
-                content: url(../../assets/icons/icon-instagram.svg);
             }
         }
         &-scrolling {

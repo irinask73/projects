@@ -170,7 +170,7 @@
                 margin-bottom: 0;
                 .contacts__info-link {
                     flex-direction: column;
-                    & li + li {
+                    & div + div {
                         margin-left: 0;
                     }
                 }
@@ -274,7 +274,7 @@
             padding-right: 0.5rem;
             border-right: 1px solid $color-bg;
             & input {
-                width: 10rem;
+                width: 11rem;
             }
         }
         .guests {

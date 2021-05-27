@@ -15,7 +15,8 @@
         }
         &-item {
             margin-bottom: 5rem;
-            & li {
+            & li,
+            & .contacts__info-link div {
                 margin-bottom: 2.5rem;
             }
         }
