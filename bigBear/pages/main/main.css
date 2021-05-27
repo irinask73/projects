@@ -87,6 +87,11 @@ a {
   display: inline-block;
 }
 
+input,
+.accordion__item {
+  cursor: pointer;
+}
+
 h1 {
   font-size: 0;
 }
@@ -413,7 +418,7 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1.75rem;
+  padding: 1rem 1.75rem;
   font-size: 1.4rem;
 }
 
@@ -427,6 +432,11 @@ form {
   content: url(../../assets/icons/search.svg);
 }
 
+.booking__location select {
+  background-color: transparent;
+}
+
+.booking__location,
 .booking__location-inner,
 .date__arrival,
 .date__departure,
@@ -438,16 +448,16 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
+.booking__location input,
 .booking__location-inner input,
 .date__arrival input,
 .date__departure input,
 .guests input {
-  background-color: transparent;
-}
-
-.input__location {
   background-color: transparent;
 }
 
@@ -1365,7 +1375,7 @@ form {
   }
   .start .date__arrival input,
   .start .date__departure input {
-    width: 10rem;
+    width: 11rem;
   }
   .start .guests {
     width: 10rem;
