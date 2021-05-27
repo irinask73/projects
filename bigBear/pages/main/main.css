@@ -237,11 +237,21 @@ img {
   font-size: 1.8rem;
   line-height: 2.19rem;
   color: #fe982a;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
 }
 
 .location__link::after {
   content: url(../../assets/icons/arrow-right-orange.svg);
   margin-left: 0.5rem;
+}
+
+.location__link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 600;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
 }
 
 .location .foto__block {

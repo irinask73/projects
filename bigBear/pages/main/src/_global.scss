@@ -114,9 +114,13 @@ img {
         font-size: 1.8rem;
         line-height: 2.19rem;
         color: $color-yellow;
+        transition: 0.6s ease all;
         &::after {
             content: url(../../assets/icons/arrow-right-orange.svg);
             margin-left: 0.5rem;
+        }
+        &:hover{
+            @include hover_effect_location;
         }
     }
     .foto__block {
