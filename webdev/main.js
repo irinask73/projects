@@ -1,4 +1,4 @@
-const bigBearSwiper = new Swiper('.user__slider.swiper-container', {
+const webdevSwiper = new Swiper('.user__slider.swiper-container', {
     spaceBetween: 10,
     loop: true,
     mousewheel: true,
