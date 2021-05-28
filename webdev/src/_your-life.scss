@@ -1,0 +1,68 @@
+.yourLife {
+    min-height: 744px;
+    display: flex;
+}
+.yourLife__content {
+    margin-top: 230px;
+    color: #fff;
+}
+.yourLife__title {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.6px;
+    text-align: center;
+}
+.yourLife__text {
+    max-width: 504px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 33px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.yourLife__social {
+    margin-bottom: 90px;
+    height: 20px;
+    display: flex;
+    margin-bottom: 90px;
+}
+.yourLife__social li + li {
+    margin-left: 30px;
+}
+.social-link {
+    width: 20px;
+    height: 20px;
+}
+.social-link:hover {
+    transform: scale(1.5);
+}
+.link-email {
+    content: url(assets/mail.svg);
+}
+.link-facebook {
+    content: url(assets/facebook.svg);
+}
+.link-instagram {
+    content: url(assets/instagram.svg);
+}
+.link-telegram {
+    content: url(assets/telegram.svg);
+}
+@media (max-width: 600px) {
+    .yourLife__title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 400px) {
+    .yourLife__content {
+        margin-top: 200px;
+    }
+    .yourLife__title {
+        font-size: 43px;
+    }
+}

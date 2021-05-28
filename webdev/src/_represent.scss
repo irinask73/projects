@@ -1,0 +1,51 @@
+.represent,
+.implement {
+    padding: 130px 0;
+}
+.represent__inner,
+.implement__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.represent__content,
+.implement__content {
+    width: 407px;
+    height: 233px;
+}
+.represent__image,
+.implement__content {
+    margin-left: 110px;
+}
+@media (max-width: 900px) {
+    .represent__image,
+    .implement__content {
+        margin-left: 30px;
+    }
+    .represent__content,
+    .implement__content {
+        width: 300px;
+        height: auto;
+    }
+    .represent,
+    .implement {
+        padding: 100px 0;
+    }
+}
+@media (max-width: 600px) {
+    .represent__inner,
+    .implement__inner {
+        flex-direction: column;
+    }
+    .represent__content,
+    .implement__content {
+        order: 2;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .represent__image,
+    .implement__content {
+        margin-left: 0;
+    }
+}

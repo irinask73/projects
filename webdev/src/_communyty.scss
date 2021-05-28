@@ -1,0 +1,42 @@
+.community {
+    height: 504px;
+    background: #f5f6f7;
+}
+.community__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 15%;
+    align-items: center;
+}
+.user {
+    width: 298px;
+    height: 175px;
+    margin: 155px 139px 0 269px;
+}
+.user__info {
+    max-width: 298px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 85px;
+    flex-shrink: 0;
+}
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.user__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: 2.4px;
+}
+.user__text {
+    color: #4e4e4e;
+    text-align: center;
+    line-height: 20px;
+}
