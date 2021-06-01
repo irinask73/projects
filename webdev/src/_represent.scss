@@ -1,36 +1,34 @@
 .represent,
 .implement {
-    padding: 130px 0;
-}
-.represent__inner,
-.implement__inner {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.represent__content,
-.implement__content {
-    width: 407px;
-    height: 233px;
+    padding: 13rem 0;
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__content {
+        width: 40.7rem;
+        height: 23.3rem;
+    }
 }
 .represent__image,
 .implement__content {
-    margin-left: 110px;
+    margin-left: 11rem;
 }
 @media (max-width: 900px) {
     .represent__image,
     .implement__content {
-        margin-left: 30px;
+        margin-left: 3rem;
     }
     .represent__content,
     .implement__content {
-        width: 300px;
+        width: 30rem;
         height: auto;
     }
     .represent,
     .implement {
-        padding: 100px 0;
+        padding: 10rem 0;
     }
 }
 @media (max-width: 600px) {
@@ -41,7 +39,7 @@
     .represent__content,
     .implement__content {
         order: 2;
-        margin-top: 25px;
+        margin-top: 2.5rem;
         text-align: center;
     }
     .represent__image,

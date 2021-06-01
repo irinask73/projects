@@ -1,42 +1,71 @@
 .community {
-    height: 504px;
+    height: 50.4rem;
     background: #f5f6f7;
-}
-.community__inner {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    margin-left: 15%;
-    align-items: center;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 15%;
+        align-items: center;
+    }
 }
 .user {
-    width: 298px;
-    height: 175px;
-    margin: 155px 139px 0 269px;
-}
-.user__info {
-    max-width: 298px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 85px;
-    flex-shrink: 0;
+    width: 29.8rem;
+    height: 17.5rem;
+    margin: 15.5rem 13.9rem 0 26.9rem;
+    &__info {
+        max-width: 29.8rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 8.5rem;
+        flex-shrink: 0;
+    }
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        letter-spacing: 0.24rem;
+    }
+    &__text {
+        color: #4e4e4e;
+        text-align: center;
+        line-height: 2rem;
+    }
 }
 .avatar {
-    width: 45px;
-    height: 45px;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
-.user__title {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 12px;
-    letter-spacing: 2.4px;
+@media (min-width: 1600px) {
+    .community__inner {
+        margin: 0 10%;
+    }
 }
-.user__text {
-    color: #4e4e4e;
-    text-align: center;
-    line-height: 20px;
+@media (min-width: 1281px) {
+    .community__inner {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 1280px) {
+    .community__inner {
+        margin-left: 5%;
+    }
+    .user__info {
+        margin-right: 3rem;
+    }
+}
+@media (max-width: 700px) {
+    .community__inner {
+        padding-top: 2rem;
+        flex-direction: column;
+        margin-left: 0;
+        & .user__info {
+            margin-right: 0;
+            padding-bottom: 2rem;
+        }
+    }
 }
