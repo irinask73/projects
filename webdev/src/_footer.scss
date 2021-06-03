@@ -21,18 +21,10 @@
 }
 .copyright {
     width: 24rem;
+    text-align: end;
 }
 .divider {
     content: url(assets/divider.svg);
     margin-left: 2rem;
     margin-right: 2rem;
-}
-@media (max-width: 650px) {
-    .footer__menu,
-    .copyright {
-        width: auto;
-    }
-    .footer__inner {
-        flex-direction: column;
-    }
 }

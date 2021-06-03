@@ -9,41 +9,9 @@
     }
     &__content {
         width: 40.7rem;
-        height: 23.3rem;
     }
 }
 .represent__image,
 .implement__content {
     margin-left: 11rem;
-}
-@media (max-width: 900px) {
-    .represent__image,
-    .implement__content {
-        margin-left: 3rem;
-    }
-    .represent__content,
-    .implement__content {
-        width: 30rem;
-        height: auto;
-    }
-    .represent,
-    .implement {
-        padding: 10rem 0;
-    }
-}
-@media (max-width: 600px) {
-    .represent__inner,
-    .implement__inner {
-        flex-direction: column;
-    }
-    .represent__content,
-    .implement__content {
-        order: 2;
-        margin-top: 2.5rem;
-        text-align: center;
-    }
-    .represent__image,
-    .implement__content {
-        margin-left: 0;
-    }
 }

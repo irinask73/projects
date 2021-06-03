@@ -2,8 +2,11 @@
     position: fixed;
     z-index: 5;
     right: 5%;
-    bottom: calc(100vh - 85%);
+    bottom: calc(100vh - 90%);
     cursor: pointer;
+    background: transparent;
+    border: none;
+    opacity: 0;
 }
 .arrow-top {
     width: 5rem;
