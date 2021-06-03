@@ -1,0 +1,58 @@
+.yourLife {
+    height: 100vh;
+    display: flex;
+    &__content {
+        margin-top: calc(100vh / 3);
+        color: #fff;
+    }
+    &__title {
+        margin-bottom: 2.3rem;
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 7.5rem;
+        letter-spacing: 0.46rem;
+        text-align: center;
+        transition: all cubic-bezier(0.4, 0, 0.81, 1.04);
+        animation: animateTitle 2s;
+    }
+    &__text {
+        max-width: 50.4rem;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 3.3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        transition: all cubic-bezier(0.4, 0, 0.81, 1.04);
+        animation: animateText 2s;
+    }
+    &__social {
+        margin-bottom: calc(100vh / 6);
+        height: 2rem;
+        display: flex;
+        & li + li {
+            margin-left: 3rem;
+        }
+    }
+}
+.social-link {
+    width: 2rem;
+    height: 2rem;
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+.link-email {
+    content: url(assets/mail.svg);
+}
+.link-facebook {
+    content: url(assets/facebook.svg);
+}
+.link-instagram {
+    content: url(assets/instagram.svg);
+}
+.link-telegram {
+    content: url(assets/telegram.svg);
+}

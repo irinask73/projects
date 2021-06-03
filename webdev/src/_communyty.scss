@@ -1,0 +1,42 @@
+.community {
+    height: 50.4rem;
+    background: #f5f6f7;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        margin-left: 15%;
+        align-items: center;
+    }
+}
+.user {
+    width: 29.8rem;
+    height: 17.5rem;
+    margin: 15.5rem 13.9rem 0 26.9rem;
+    &__info {
+        max-width: 29.8rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 8.5rem;
+        flex-shrink: 0;
+    }
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        letter-spacing: 0.24rem;
+    }
+    &__text {
+        color: #4e4e4e;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
+.avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}

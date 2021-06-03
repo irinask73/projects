@@ -1,0 +1,17 @@
+.represent,
+.implement {
+    padding: 13rem 0;
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__content {
+        width: 40.7rem;
+    }
+}
+.represent__image,
+.implement__content {
+    margin-left: 11rem;
+}

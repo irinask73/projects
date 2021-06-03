@@ -1,0 +1,26 @@
+.slider__item img {
+    min-height: 24rem;
+    aspect-ratio: 16 / 9;
+}
+.user__slider-navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2rem;
+}
+.slider__btn {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 2.5rem;
+    z-index: 20;
+    cursor: pointer;
+}
+.nxt--btn::before {
+    content: url(assets/arrow-right.svg);
+}
+.prv--btn::after {
+    content: url(assets/arrow-left.svg);
+}
+.slider__btn:hover {
+    opacity: 0.8;
+}

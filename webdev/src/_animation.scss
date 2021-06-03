@@ -1,0 +1,31 @@
+@keyframes animateTitle {
+    0% {
+        transform: translate(-120%, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes animateText {
+    0% {
+        transform: translate(120%, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.animation {
+    opacity: 0;
+    transform: translate(0, 120%);
+    transition: all 1s ease;
+}
+.animate__item.active > .animation {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease;
+}
