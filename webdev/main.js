@@ -1,7 +1,10 @@
 const webdevSwiper = new Swiper('.user__slider.swiper-container', {
-  spaceBetween: 10,
   loop: true,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  centerSlides: true,
   mousewheel: true,
+  freeMode: true,
   navigation: {
     nextEl: '.nxt--btn',
     prevEl: '.prv--btn',
@@ -11,13 +14,17 @@ const webdevSwiper = new Swiper('.user__slider.swiper-container', {
     type: 'fraction',
   },
   breakpoints: {
-    // when window width is >= 320px
     300: {
-      direction: 'vertical',
       slidesPerView: 1
     },
-    700: {
+    450: {
       slidesPerView: 1.2
+    },
+    500: {
+      slidesPerView: 1.3
+    },
+    600: {
+      slidesPerView: 1.5
     },
     900: {
       slidesPerView: 1.8
@@ -25,10 +32,13 @@ const webdevSwiper = new Swiper('.user__slider.swiper-container', {
     1000: {
       slidesPerView: 2.1
     },
-    1600: {
+    1200: {
       slidesPerView: 2.5
     },
-  },
+    1850: {
+      slidesPerView: 3
+    },
+  }
 });
 
 //BOTTON TO TOP
@@ -51,7 +61,7 @@ function buttonToTop() {
 
 //ANIMATION
 function animateScroll() {
-  let windowCenter = window.innerHeight  + window.scrollY;
+  let windowCenter = window.innerHeight + window.scrollY;
   animateItems.forEach(item => {
     if (windowCenter >= item.offsetTop) {
       item.classList.add('active');
