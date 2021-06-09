@@ -1,0 +1,35 @@
+@media (min-width: (541px)) {
+    //header
+    .header {
+        &__inner {
+            .burger {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+        }
+        &__menu {
+            position: relative;
+            opacity: 1;
+            @include flex-all-sb;
+            @include center-rest;
+        }
+    }
+    .menu__list {
+        @include flex-all-sb;
+        font-size: 1em;
+        li {
+            padding: 0 2.2rem;
+        }
+        li + li {
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: (700px)) {
+    //header
+    .menu__list {
+        font-size: 1.3em;
+    }
+}

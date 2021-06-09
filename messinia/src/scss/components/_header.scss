@@ -1,0 +1,63 @@
+//
+.header {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  &__inner {
+    height: 10rem;
+    @include flex-all-sb;
+  }
+  &__menu {
+    position: absolute;
+    @include center;
+    opacity: 0;
+  }
+}
+.burger {
+  @include burger;
+}
+.menu__list {
+  font-size: 2em;
+  color: $link-hover;
+  li {
+    padding-bottom: 3rem;
+    display: block;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      .menu__link {
+        opacity: 1;
+        transform: scale(1.2);
+        &::before {
+          transform: scaleX(1);
+          transform-origin: center;
+        }
+      }
+    }
+  }
+}
+.menu__link {
+  padding-bottom: 0.3rem;
+  color: $turquoise;
+  opacity: 0.8;
+  transition: all 1s cubic-bezier(0.3, 0.1, 0.3, 1);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: currentColor;
+    height: 0.1rem;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s cubic-bezier(0.3, 0.1, 0.3, 1);
+  }
+}
+.bg--active {
+  height: 100vh;
+  background-color: $bg;
+}
+.header__menu.menu--active {
+  opacity: 1;
+}
