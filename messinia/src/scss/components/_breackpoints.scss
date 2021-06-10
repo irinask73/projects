@@ -26,10 +26,42 @@
         }
     }
 }
-
+@media (min-width: (640px)) {
+    //footer
+    .footer__inner div:nth-child(odd) {
+        margin-left: 0;
+    }
+    .footer__col {
+        flex-basis: calc(50% - 3rem);
+        margin: 0 0 3rem 3rem;
+        text-align: unset;
+    }
+    .follow{
+        justify-content: start;
+     }
+}
 @media (min-width: (700px)) {
     //header
     .menu__list {
         font-size: 1.3em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__col {
+        flex-basis: calc(33.3333% - 3rem);
+        margin: 0 0 0 3rem;
+        &-links {
+            margin-left: 0;
+        }
+    }
+    .footer__inner {
+        flex-wrap: nowrap;
+        & div:nth-child(odd) {
+            margin-left: 3rem;
+        }
+        & div:first-child {
+            margin-left: 0;
+        }
     }
 }

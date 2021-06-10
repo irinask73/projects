@@ -1,8 +1,7 @@
 //
 .header {
   position: relative;
-  font-size: 1.5rem;
-  font-weight: 600;
+  @include start-style;
   &__inner {
     height: 10rem;
     @include flex-all-sb;
