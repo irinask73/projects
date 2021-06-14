@@ -24,6 +24,8 @@ let isProd = false; // dev by default
 const clean = () => {
   return del(['app/*'])
 }
+//resize image with sharp
+
 
 //svg sprite
 const svgSprites = () => {

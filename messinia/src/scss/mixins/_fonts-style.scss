@@ -2,3 +2,23 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
+@mixin text-style {
+    font-size: calc(1.4rem + 2vw);
+    line-height: 3.7rem;
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+}
+@mixin title-big-style {
+    font-size: calc(1.4rem + 6vw);
+    line-height: 6rem;
+    font-weight: 600;
+    text-shadow: #fff -1px -1px 0, 
+                 #000 1px 1px 0;
+    text-align: center;
+}
+@mixin link-button-style {
+    font-size: calc(1.4rem + 2vw);
+    font-weight: 600;
+    box-shadow: 0.4rem 0.4rem 0.8rem 0 rgba(34, 60, 80, 0.2);
+    text-shadow: #fff -1px -1px 0, 
+    #000 1px 1px 0;
+}
