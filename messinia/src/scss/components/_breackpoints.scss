@@ -108,6 +108,9 @@
 @media (min-width: 1100px) {
     //service
     .service {
+        &__items{
+            margin: 8rem 0;
+        }
         &__item {
             flex-basis: calc(25% - 3rem);
             margin: auto;

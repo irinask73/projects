@@ -2,7 +2,7 @@
     &__items {
         @include flex-all-sb;
         flex-wrap: wrap;
-        margin: 8rem 0;
+        margin: 8rem 0 3rem;
     }
     &__item {
         flex-basis: 100%;
