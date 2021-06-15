@@ -1,0 +1,62 @@
+.service {
+    &__items {
+        @include flex-all-sb;
+        flex-wrap: wrap;
+        margin: 8rem 0;
+    }
+    &__item {
+        flex-basis: 100%;
+        max-width: 85vw;
+        width: 100%;
+        margin: 0 auto 5rem;
+        padding: 2rem;
+        @include flex-v-center;
+        @include flex-col;
+        border-radius: 0.4rem;
+        box-shadow: 0 0.2rem 5rem 0 rgba(0, 0, 0, 0.07);
+        //cursor: pointer;
+        transition: transform 1s cubic-bezier(0.3, 0.1, 0.3, 1);
+        &:hover {
+           transform: scale(1.2);
+            .icon__service {
+                fill: $link-hover;
+            }
+            .service__item-icons{
+                border: 0.3rem solid $link-hover;
+            }
+            .service__item-link{
+                background-color: $link-hover;
+            }
+        }
+        &-icons {
+            position: relative;
+            display: block;
+            margin-bottom: 5rem;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            border: 0.3rem solid $turquoise;
+        }
+        &-title {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        &-text {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        &-link {
+            background-color: $turquoise;
+        }
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.icon__service {
+    position: absolute;
+    @include center;
+    fill: $turquoise;
+}
