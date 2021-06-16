@@ -10,27 +10,35 @@
     position: relative;
     order: 2;
     align-self: flex-start;
-    margin: 2rem 0 2rem 2rem;
+    margin: 2rem 0 2rem 3rem;
     padding: 0.5rem 0.5rem 0.5rem 3.5rem;
     font-size: 1.8rem;
     color: #fff;
     font-weight: 600;
     background-color: $olive;
     border-radius: 0.4rem;
+    filter: drop-shadow(0.1rem 0.2rem 0.2rem black);
 }
 
 //explore__link
 @mixin explore-link {
     @include flex-all-center;
     li + li {
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
     li {
         width: 6rem;
         height: 6rem;
         border-radius: 1rem;
-        &::focus-within {
+        filter: drop-shadow(2px 2px 2px black);
+        transition: 0.3s ease-in-out;
+        &:focus-within {
             transform: scale(1.2);
+        }
+        @include desktop{
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
 }
@@ -42,6 +50,7 @@
     @include flex-col;
     background-color: #fff;
     transition: all 0.5s;
+    box-shadow: 0.8rem 0.8rem 0.8rem -0.6rem rgba(34, 60, 80, 0.35);
     &-title {
         @include title-artical;
         order: 3;
@@ -49,6 +58,16 @@
     &-img {
         min-height: 31.4rem;
         order: 1;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        &:focus {
+            @include explore-item-img;
+        }
+        @include desktop {
+            &:hover {
+                @include explore-item-img;
+            }
+        }
     }
     &-category {
         @include explore-category;

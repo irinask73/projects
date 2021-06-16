@@ -19,6 +19,12 @@
         background-color: $link-hover;
     }
 }
+//explore
+@mixin explore-item-img{
+    opacity: 0.9;
+    filter: drop-shadow(0.2rem 0.4rem 0.6rem black);
+    transform: scale(0.9);
+}
 //footer
 @mixin futer-icon-visible {
     .icon__social.facebook {
