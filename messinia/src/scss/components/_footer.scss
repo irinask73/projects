@@ -37,12 +37,14 @@
         &::before {
             color: #fff;
         }
-        &:hover {
-            opacity: 1;
-            transform: scale(1.2);
-            &::before {
-                transform: scaleX(1);
-                transform-origin: center;
+        @include desktop {
+            &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                &::before {
+                    transform: scaleX(1);
+                    transform-origin: center;
+                }
             }
         }
     }
@@ -53,6 +55,12 @@
     & > li {
         margin-right: 2rem;
     }
+    &__link {
+        outline: none;
+        &.focus-visible {
+            @include futer-icon-visible;
+        }
+    }
 }
 //icons
 .icon__contacts {
@@ -61,20 +69,21 @@
 }
 .icon__social {
     fill: white;
-    border-radius: 50%;
-    border: 0.2rem solid;
-    &:hover {
-        &.facebook {
-            background-color: $bg-facebook;
-            border-color: $bg-facebook;
-        }
-        &.twitter {
-            background-color: $bg-twitter;
-            border-color: $bg-twitter;
-        }
-        &.pinterest {
-            background-color: $bg-pinterest;
-            border-color: $bg-pinterest;
+    @include icon-footer;
+    @include desktop {
+        &:hover {
+            &.facebook {
+                background-color: $bg-facebook;
+                border-color: $bg-facebook;
+            }
+            &.twitter {
+                background-color: $bg-twitter;
+                border-color: $bg-twitter;
+            }
+            &.pinterest {
+                background-color: $bg-pinterest;
+                border-color: $bg-pinterest;
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 //
 .header {
-  h1{
+  h1 {
     width: 0;
     height: 0;
     opacity: 0;
@@ -26,20 +26,23 @@
   li {
     display: block;
     text-align: center;
-    &:hover {
-      cursor: pointer;
-      .menu__link {
-        opacity: 1;
-        transform: scale(1.2);
-        &::before {
-          transform: scaleX(1);
-          transform-origin: center;
+    @include desktop {
+      &:hover {
+        cursor: pointer;
+        .menu__link {
+          opacity: 1;
+          transform: scale(1.2);
+          &::before {
+            transform: scaleX(1);
+            transform-origin: center;
+          }
         }
       }
     }
   }
 }
 .menu__link {
+  outline: none;
   padding-bottom: 0.3rem;
   color: $turquoise;
   opacity: 0.8;
@@ -55,6 +58,9 @@
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.5s cubic-bezier(0.3, 0.1, 0.3, 1);
+  }
+  &.focus-visible{
+    @include menu-visible;
   }
 }
 .bg--active {
