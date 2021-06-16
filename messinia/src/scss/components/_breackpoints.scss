@@ -6,6 +6,16 @@
             width: 100%;
         }
     }
+    //explore
+    .explore__item-link{
+        @include flex-all-center;
+        li + li {
+            margin-left: 3rem;
+        }
+        li{
+            margin-bottom: 0;
+        }
+    }
 }
 @media (min-width: (500px)) {
     //slider
