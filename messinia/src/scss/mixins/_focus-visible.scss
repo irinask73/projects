@@ -20,10 +20,24 @@
     }
 }
 //explore
-@mixin explore-item-img{
+@mixin explore-item-img-visible{
     opacity: 0.9;
     filter: drop-shadow(0.2rem 0.4rem 0.6rem black);
     transform: scale(0.9);
+}
+//operator
+@mixin operator-img-visible{
+    border-radius: 0.4rem;
+    height: 20rem;
+    width: 50rem; 
+}
+@mixin operator-subtitle-visible{
+    text-transform: uppercase;
+    color: $link-hover;
+}
+@mixin operator-link-button-visible{
+    transform: scale(1.2);
+    background-color: $link-hover;
 }
 //footer
 @mixin futer-icon-visible {

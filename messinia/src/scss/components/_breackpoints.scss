@@ -10,7 +10,7 @@
     .explore__item-link{
         @include flex-all-center;
         li + li {
-            margin-left: 3rem;
+            margin-left: 2.5rem;
         }
         li{
             margin-bottom: 0;
@@ -81,6 +81,12 @@
                 height: 12rem;
                 text-align: initial;
             }
+        }
+    }
+    //operator
+    .operator{
+        &__item{
+            flex-basis: calc(50% - 3rem);
         }
     }
     //footer

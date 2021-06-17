@@ -1,10 +1,8 @@
 .explore {
-    padding: 8rem 0;
+   @include section-padding;
     background-color: $light-gray;
     &__title {
         @include title-section;
-        text-align: center;
-        margin-bottom: 6rem;
     }
     &__btn {
         text-align: center;

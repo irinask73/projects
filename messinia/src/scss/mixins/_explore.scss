@@ -60,11 +60,11 @@
         opacity: 1;
         transition: all 0.3s ease-in-out;
         &:focus {
-            @include explore-item-img;
+            @include explore-item-img-visible;
         }
         @include desktop {
             &:hover {
-                @include explore-item-img;
+                @include explore-item-img-visible;
             }
         }
     }
