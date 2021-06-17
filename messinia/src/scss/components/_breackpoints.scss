@@ -7,12 +7,12 @@
         }
     }
     //explore
-    .explore__item-link{
+    .explore__item-link {
         @include flex-all-center;
         li + li {
             margin-left: 2.5rem;
         }
-        li{
+        li {
             margin-bottom: 0;
         }
     }
@@ -83,12 +83,6 @@
             }
         }
     }
-    //operator
-    .operator{
-        &__item{
-            flex-basis: calc(50% - 3rem);
-        }
-    }
     //footer
     .footer__inner div:nth-child(odd) {
         margin-left: 0;
@@ -113,6 +107,12 @@
         margin-left: 3rem;
         flex-basis: calc(50% - 3rem);
     }
+    //operator
+    .operator {
+        &__item {
+            flex-basis: calc(50% - 3rem);
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -122,6 +122,10 @@
     }
     //explore
     .explore__item {
+        flex-basis: calc(33.33% - 3rem);
+    }
+    //operator
+    .operator__item{
         flex-basis: calc(33.33% - 3rem);
     }
     //footer

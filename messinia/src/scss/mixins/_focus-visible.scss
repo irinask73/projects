@@ -29,7 +29,8 @@
 @mixin operator-img-visible{
     border-radius: 0.4rem;
     height: 20rem;
-    width: 50rem; 
+    max-width: 50rem; 
+    width: 100%;
 }
 @mixin operator-subtitle-visible{
     text-transform: uppercase;
