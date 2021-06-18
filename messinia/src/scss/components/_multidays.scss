@@ -1,6 +1,7 @@
-.operator {
+.multiday{
+    background-color: $light-gray;
     @include section-padding;
-    &__title {
+    &__title{
         @include title-section;
     }
     &__items{
@@ -8,6 +9,7 @@
         flex-wrap: wrap;
     }
     &__item{
-        @include operator-article;
+        @include multiday-artical;
     }
 }
+

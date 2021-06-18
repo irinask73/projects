@@ -8,7 +8,7 @@
     }
 }
 //service
-@mixin service-item-focus-visible{
+@mixin service-item-focus-visible {
     .icon__service {
         fill: $link-hover;
     }
@@ -20,25 +20,30 @@
     }
 }
 //explore
-@mixin explore-item-img-visible{
+@mixin explore-item-img-visible {
     opacity: 0.9;
     filter: drop-shadow(0.2rem 0.4rem 0.6rem black);
     transform: scale(0.9);
 }
 //operator
-@mixin operator-img-visible{
+@mixin operator-img-visible {
     border-radius: 0.4rem;
     height: 20rem;
-    max-width: 50rem; 
+    max-width: 50rem;
     width: 100%;
 }
-@mixin operator-subtitle-visible{
+@mixin operator-subtitle-visible {
     text-transform: uppercase;
     color: $link-hover;
 }
-@mixin operator-link-button-visible{
+@mixin operator-link-button-visible {
     transform: scale(1.2);
     background-color: $link-hover;
+}
+//multidays
+@mixin multiday-link-visible {
+    color: $link-hover;
+    font-size: 2rem;
 }
 //footer
 @mixin futer-icon-visible {

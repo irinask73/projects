@@ -33,6 +33,14 @@
     line-height: 3rem;
     text-align: center;
     color: $turquoise;
+    &:focus {
+        @include operator-subtitle-visible;
+    }
+    @include desktop {
+        &:hover {
+            @include operator-subtitle-visible;
+        }
+    }
 }
 @mixin link-button-style {
     font-size: calc(1.4rem + 2vw);

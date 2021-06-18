@@ -32,14 +32,6 @@
         order: 3;
         @include subtitle-artical;
         transition: all 0.3s ease-in-out;
-        &:focus {
-            @include operator-subtitle-visible;
-        }
-        @include desktop {
-            &:hover {
-                @include operator-subtitle-visible;
-            }
-        }
     }
     &-text {
         order: 4;

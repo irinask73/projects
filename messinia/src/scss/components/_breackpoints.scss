@@ -83,6 +83,10 @@
             }
         }
     }
+    //multiday
+    .multiday__item{
+        flex-basis: calc(50% - 3rem);
+    }
     //footer
     .footer__inner div:nth-child(odd) {
         margin-left: 0;
@@ -126,6 +130,10 @@
     }
     //operator
     .operator__item{
+        flex-basis: calc(33.33% - 3rem);
+    }
+      //multiday
+      .multiday__item{
         flex-basis: calc(33.33% - 3rem);
     }
     //footer
