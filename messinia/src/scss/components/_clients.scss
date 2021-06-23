@@ -1,0 +1,64 @@
+.clients {
+    @include section-padding;
+    &__title {
+        @include title-section;
+        margin-bottom: 3rem;
+    }
+    &__slider {
+        padding-bottom: 4rem;
+        &.swiper-container{
+            width: 100%;
+        }
+    }
+    &__text {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        color: black;
+    }
+    &__name {
+        @include title-artical;
+        margin: 1rem 0 0;
+    }
+    &__pagination {
+        .swiper-pagination-bullet {
+            width: 1.1rem;
+            height: 1.1rem;
+        }
+        & .swiper-pagination-bullet-active {
+            background: $link-hover;
+        }
+    }
+}
+// .clients__inner {
+//     margin-top: 130px;
+//     margin-bottom: 80px;
+//     text-align: center;
+//     button {
+//       top: 25%;
+//     }
+//     .next {
+//       left: 20px;
+//     }
+//   }
+//   .clients__title {
+//     padding-top: 15px;
+//   }
+//   .clients__text {
+//     max-width: 650px;
+//     width: 100%;
+//     margin: 0 auto;
+//     margin-top: 40px;
+//     color: $text;
+//     font-size: 19px;
+//     line-height: 30px;
+//   }
+//   .clients__name {
+//     font-size: 21px;
+//     color: #9a8faf;
+//     margin-top: 30px;
+//   }

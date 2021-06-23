@@ -13,8 +13,9 @@
         filter: drop-shadow(black 0.2rem 0.4rem 0.6rem);
     }
     &-title {
-        height: 6rem;
+        height: 8rem;
         @include subtitle-artical;
+        @include flex-v-center;
         margin-bottom: 2rem;
         text-shadow: #fff -1px -1px 0, #000 1px 1px 0;
         color: #fff;
