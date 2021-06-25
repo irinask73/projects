@@ -84,7 +84,7 @@
         }
     }
     //multiday
-    .multiday__item{
+    .multiday__item {
         flex-basis: calc(50% - 3rem);
     }
     //footer
@@ -127,13 +127,19 @@
     //explore
     .explore__item {
         flex-basis: calc(33.33% - 3rem);
+        &-link li + li {
+            margin-left: 1rem;
+        }
+        &-title{
+            height: 4.8rem;
+        }
     }
     //operator
-    .operator__item{
+    .operator__item {
         flex-basis: calc(33.33% - 3rem);
     }
-      //multiday
-      .multiday__item{
+    //multiday
+    .multiday__item {
         flex-basis: calc(33.33% - 3rem);
     }
     //footer
@@ -178,6 +184,17 @@
     .explore {
         &__title {
             font-size: 5.8rem;
+        }
+    }
+}
+@media (min-width: 1175px) {
+    //explore
+    .explore__item {
+        &-link li + li {
+            margin-left: 2.5rem;
+        }
+        &-title{
+            height: inherit;
         }
     }
 }
