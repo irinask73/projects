@@ -1,5 +1,5 @@
 .explore {
-   @include section-padding;
+    @include section-padding;
     background-color: $light-gray;
     &__title {
         @include title-section;
@@ -46,6 +46,12 @@
     color: #fff;
     font-weight: 600;
     @include flex-col-center;
+    &-btn {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border-radius: inherit;
+    }
 }
 .favorite {
     background-color: $red;

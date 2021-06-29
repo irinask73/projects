@@ -31,6 +31,11 @@
         &-link {
             font-size: 0.85em;
             display: block;
+            & a {
+                @include mobile{
+                  padding: 0.5rem 0;  
+                }              
+            }
         }
     }
     .menu__link {

@@ -14,7 +14,6 @@ const slider = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
 });
 
 //clients
@@ -22,5 +21,9 @@ const clientsSwiper = new Swiper('.clients__slider', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  navigation: {
+    nextEl: '.clients__button-next',
+    prevEl: '.clients__button-prev',
   },
 });

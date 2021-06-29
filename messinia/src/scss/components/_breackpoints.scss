@@ -42,6 +42,9 @@
     }
     .menu__list {
         @include flex-all-sb;
+        li{
+            margin-bottom: 0;
+        }
         li + li {
             padding-left: 2.5rem;
         }

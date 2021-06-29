@@ -8,8 +8,8 @@
     margin-bottom: 5rem;
     box-shadow: 0.8rem 0.8rem 0.8rem -0.6rem rgba(34, 60, 80, 0.35);
     &-img {
-        max-width: 37rem;
         width: 100%;
+        aspect-ratio: auto;
         filter: drop-shadow(black 0.2rem 0.4rem 0.6rem);
     }
     &-title {
